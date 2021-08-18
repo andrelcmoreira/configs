@@ -1,5 +1,3 @@
-# all the commands defined here can be found on ranger wiki page.
-
 import os
 from ranger.core.loader import CommandLoader
 from ranger.api.commands import Command

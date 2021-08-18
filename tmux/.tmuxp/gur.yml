@@ -1,0 +1,14 @@
+session_name: gur
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd ~/dev/gur
+  panes:
+    - nv gur/gur.py
+
+- window_name: test
+  layout: main-horizontal
+  shell_command_before:
+    - cd ~/dev/gur
+    - docker container run -v $(pwd):/gur --rm --name gur gur-tests:latest

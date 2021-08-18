@@ -1,18 +1,15 @@
 " Plugins {{{
 call plug#begin()
-    Plug 'terryma/vim-multiple-cursors'
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'jiangmiao/auto-pairs'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'airblade/vim-gitgutter'
-    Plug 'vimlab/split-term.vim'
     Plug 'PotatoesMaster/i3-vim-syntax'
     Plug 'tpope/vim-fugitive'
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
     Plug 'tpope/vim-surround'
-    Plug 'easymotion/vim-easymotion'
     Plug 'rbgrouleff/bclose.vim'
     Plug 'francoiscabrol/ranger.vim'
     Plug 'dense-analysis/ale'
@@ -20,11 +17,14 @@ call plug#begin()
     Plug 'deoplete-plugins/deoplete-jedi'
     Plug 'zchee/deoplete-clang'
     Plug 'SirVer/ultisnips'
-    Plug 'honza/vim-snippets'
+    Plug 'carvalhudo/vim-snippets'
     Plug 'sakhnik/nvim-gdb'
     Plug 'wincent/ferret'
-    Plug 'soramugi/auto-ctags.vim'
     Plug 'kenn7/vim-arsync'
+    Plug 'mg979/vim-visual-multi'
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'mhinz/vim-startify'
 call plug#end()
 " }}}
 
@@ -45,17 +45,12 @@ let g:UltiSnipsJumpForwardTrigger = "<c-b>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 let g:UltiSnipsEditSplit = "vertical"
 
-if (&ft == 'c') || (&ft == 'cpp')
-    let g:deoplete#sources#clang#libclang_path = "/usr/lib/libclang.so"
-    let g:deoplete#sources#clang#clang_header = "/usr/lib/clang/"
-    let g:deoplete#sources#clang#include_default_arguments = "True"
-    let g:auto_ctags = 1
-elseif (&ft == 'python')
-    let g:deoplete#sources#jedi#show_docstring = 1
-    let g:auto_ctags = 1
-elseif (&ft == 'markdown')
-    let g:mkdp_browser = "qutebrowser"
-endif
+let g:deoplete#sources#clang#libclang_path = "/usr/lib/libclang.so"
+let g:deoplete#sources#clang#clang_header = "/usr/lib/clang/"
+let g:deoplete#sources#clang#include_default_arguments = "True"
+let g:deoplete#sources#jedi#show_docstring = 1
+let g:mkdp_browser = "qutebrowser"
+let g:bootlin_version = "5.7.18"
 " }}}
 
 " Appearance {{{
@@ -70,8 +65,6 @@ highlight LineNr ctermfg=grey ctermbg=238
 let g:airline_theme = "zenburn"
 let g:airline_symbols_ascii = 1
 
-"highlight clear ALEErrorSign
-"highlight clear ALEWarningSign
 highlight ALEErrorSign ctermbg=238
 highlight ALEWarningSign ctermbg=238
 highlight SignColumn ctermbg=238
@@ -79,7 +72,7 @@ highlight GitGutterAdd ctermfg=green ctermbg=238
 highlight GitGutterDelete ctermfg=red ctermbg=238
 
 if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'python')
-    let &colorcolumn=join(range(101,999),",")
+    let &colorcolumn=join(range(81,999),",")
     highlight ColorColumn ctermbg=238 guibg=lightgrey
 endif
 
@@ -131,9 +124,9 @@ noremap <Left>  <Nop>
 noremap <Right> <Nop>
 
 " git hotkeys
-nnoremap <leader>gs  :Gstatus<cr>
-nnoremap <leader>gc  :Gcommit<cr>
-nnoremap <leader>gca :Gcommit --amend<cr>
+nnoremap <leader>gs  :Git<cr>
+nnoremap <leader>gc  :Git commit<cr>
+nnoremap <leader>gca :Git commit --amend<cr>
 nnoremap <leader>gh  :diffget //2<cr>
 nnoremap <leader>gl  :diffget //3<cr>
 
@@ -141,7 +134,7 @@ if (&ft == 'c') || (&ft == 'cpp')
     nnoremap <leader>c _i//<Esc>
     nnoremap <leader>u _xx
     iabbrev dbg printf("%s:%d\n", __FUNCTION__, __LINE__);
-elseif (&ft == 'python')
+elseif (&ft == 'python') || (&ft == 'sh') || (&ft == 'yaml')
     nnoremap <leader>c _i#<Esc>
     nnoremap <leader>u _x
 elseif (&ft == 'markdown')

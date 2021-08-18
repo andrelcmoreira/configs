@@ -10,6 +10,8 @@
 # Type: Bool
 c.auto_save.session = True
 
+config.load_autoconfig()
+
 # Enable JavaScript.
 # Type: Bool
 config.set('content.javascript.enabled', True, 'file://*')
@@ -414,7 +416,7 @@ c.fonts.statusbar = '12pt Cascadia Code'
 
 # Font used in the tab bar.
 # Type: QtFont
-c.fonts.tabs = '12pt Cascadia Code'
+#c.fonts.tabs = '12pt Cascadia Code'
 
 # Bindings for normal mode
 config.bind('<return>', 'follow-selected')
@@ -424,7 +426,7 @@ config.bind('K', 'tab-next')
 config.bind('M', 'hint links spawn mpv {hint-url}')
 config.bind('D', 'hint links spawn youtube-dl --all-subs --output "/home/andre/Vídeos" {hint-url}')
 config.bind('e', 'open-editor')
-config.bind('E', 'spawn urxvt -e nvim /home/andre/.config/qutebrowser/config.py')
+config.bind('E', 'spawn xfce4-terminal -e "nvim /home/andre/.config/qutebrowser/config.py"')
 
 # Editor (and arguments) to use for the `open-editor` command. The
 # following placeholders are defined: * `{file}`: Filename of the file
@@ -450,6 +452,8 @@ c.url.searchengines = {
     'g': 'https://www.google.com.ar/search?q={}',
     'w': 'https://en.wikipedia.org/wiki/{}',
     'gh': 'https://github.com/search?q={}',
-    'so': 'https://stackoverflow.com/search?q={}'
+    'so': 'https://stackoverflow.com/search?q={}',
+    't': 'https://translate.google.com/#view=home&op=translate&sl=en&tl=pt&text={}'
 }
 
+c.colors.webpage.darkmode.enabled = True

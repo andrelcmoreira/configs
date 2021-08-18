@@ -1,0 +1,6 @@
+session_name: gur-recipes
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd ~/dev/gur-recipes
