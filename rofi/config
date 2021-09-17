@@ -1,5 +1,0 @@
-rofi.color-window:    #3f3f3f, #3f3f3f, #3f3f3f
-rofi.color-normal:    #3f3f3f, #e9d5c6, #3f3f3f, #8cd0d3, #3f3f3f
-rofi.separator-style: solid
-rofi.font:            Cascadia Code 16
-rofi.hide-scrollbar:  true

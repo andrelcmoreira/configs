@@ -1,0 +1,23 @@
+configuration {
+    separator-style: "solid";
+    font:            "SauceCodePro Nerd Font Bold 16";
+}
+
+//----------------------
+// Colors
+//----------------------
+
+* {
+    background:                  #3a3a3a;
+    foreground:                  #e9d5c6;
+    selected-normal-foreground:  #3a3a3a;
+    alternate-normal-background: #3a3a3a;
+    bordercolor:                 #3a3a3a;
+    selected-normal-background:  #8cd0d3;
+    border-color:                #3a3a3a;
+    separatorcolor:              #3a3a3a;
+}
+
+listview {
+    scrollbar:    false;
+}
