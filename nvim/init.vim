@@ -70,6 +70,7 @@ highlight ALEWarningSign ctermbg=238
 highlight SignColumn ctermbg=238
 highlight GitGutterAdd ctermfg=green ctermbg=238
 highlight GitGutterDelete ctermfg=red ctermbg=238
+highlight GitGutterChange ctermfg=grey ctermbg=238
 
 if (&ft == 'c') || (&ft == 'cpp') || (&ft == 'python')
     let &colorcolumn=join(range(81,999),",")
