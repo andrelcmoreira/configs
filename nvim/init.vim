@@ -59,8 +59,8 @@ set background=dark
 
 set cursorline
 highlight cursorline cterm=none term=none ctermbg=238
-highlight CursorLineNR ctermbg=238
-highlight LineNr ctermfg=grey ctermbg=238
+highlight CursorLineNR cterm=none ctermbg=238
+highlight LineNr cterm=none ctermfg=grey ctermbg=238
 
 let g:airline_theme = "zenburn"
 let g:airline_symbols_ascii = 1
@@ -104,6 +104,7 @@ nnoremap <leader>tc :tabclose<cr>
 nnoremap <leader>m  :Man<cr>
 nnoremap <leader>o  o<Esc>
 nnoremap <leader>O  O<Esc>
+nnoremap <leader>cf :!clang-format -i --style=Google %<Esc><cr>:e<Esc>
 
 " fzf hotkeys
 nnoremap <c-p> :Files<cr>
