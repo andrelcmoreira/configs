@@ -3,6 +3,6 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/carvalhudo.github.io/articles
+    - cd ~/dev/projects/github/carvalhudo.github.io/articles
   panes:
     - nv kunit-pt1-ptbr.md -c MarkdownPreview

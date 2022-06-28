@@ -1,16 +1,15 @@
-session_name: kermma
+session_name: pyfce
 windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/github/kermma
-  panes:
-    - nv kermma_main.c
+    - cd ~/dev/projects/github/pyfce
+    - nv pyfce.py
 
 - window_name: test
   layout: main-horizontal
   shell_command_before:
-    - cd ~/dev/projects/github/kermma/vm
+    - cd ~/dev/projects/github/pyfce
   panes:
     - shell_command:
-        - vagrant up
+        - source venv/bin/activate

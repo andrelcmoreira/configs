@@ -1,5 +1,8 @@
 # removing window border
+#for_window [class="^.*"] border pixel 4
 for_window [class="^.*"] border pixel 0
+#for_window [class="mpv"] floating enable
+for_window [class="espotifai-gui"] floating enable
 new_window 1pixel
 
 gaps inner 4
@@ -20,16 +23,15 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
 
 # print screen shortcut
-bindsym Print exec $SCRIPTS_PATH/print_screen
+bindsym $mod+Shift+s exec $SCRIPTS_PATH/print_screen
 
 bindsym $mod+Shift+m exec /bin/sh $SCRIPTS_PATH/session_manager
 
 # launch rofi
 bindsym $mod+d exec "rofi -modi run,drun -show drun -show-icons -display-drun 'Choose the app' -drun-display-format {name} -line-padding 3"
 
-# launch usg-mgr script for umount devices
-bindsym $mod+u exec "qsudo /bin/sh $SCRIPTS_PATH/../../usb-rofi/usb_mgr -u"
-#bindsym $mod+u exec "qsudo /bin/sh $SCRIPTS_PATH/usb-mgr -u"
+# launch usg-rofi script to umount devices
+bindsym $mod+u exec "qsudo /usr/bin/usb-rofi -u"
 
 # launch tmux section selector script
 bindsym $mod+Shift+d exec $SCRIPTS_PATH/tmux_session_selector
@@ -52,7 +54,7 @@ bindsym $mod+Shift+n exec $TERMINAL -e newsboat --title=newsboat
 set $mod Mod4
 
 # set font
-font pango:Cascadia Code 15
+font pango:Cascadia Code 17
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -114,7 +116,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # define the workspaces
-set $ws1 
+set $ws1 
 set $ws2 
 set $ws3 
 set $ws4 
@@ -122,7 +124,6 @@ set $ws5 
 set $ws6 
 set $ws7 
 set $ws8 
-set $ws9 
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -144,12 +145,8 @@ bindsym $mod+Shift+5 move container to workspace $ws5
 bindsym $mod+Shift+6 move container to workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9
 
 # assign the applications to specific workspaces
-
-for_window [class="Spotify"] move to workspace $ws1
-for_window [class="Spotify"] focus
 
 for_window [class="qutebrowser"] move to workspace $ws2
 for_window [class="qutebrowser"] focus
@@ -177,8 +174,11 @@ for_window [class="Xfce4-terminal" title="newsboat"] focus
 for_window [class="Telegram"] move to workspace $ws8
 for_window [class="Telegram"] focus
 
-for_window [class="mpv"] move to workspace $ws9
+for_window [class="mpv"] move to workspace $ws1
 for_window [class="mpv"] focus
+
+for_window [class="Kicad"] move to workspace $ws7
+for_window [class="Kicad"] focus
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -217,6 +217,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     status_command i3blocks
+    #output HDMI1
     position top
 
     colors {

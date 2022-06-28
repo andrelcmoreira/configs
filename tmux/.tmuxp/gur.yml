@@ -3,12 +3,12 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/gur
+    - cd ~/dev/projects/github/gur
   panes:
     - nv gur/gur.py
 
 - window_name: test
   layout: main-horizontal
   shell_command_before:
-    - cd ~/dev/gur
-    - docker container run -v $(pwd):/gur --rm --name gur gur-tests:latest
+    - cd ~/dev/projects/github/gur
+    - /bin/sh scripts/run_tests.sh

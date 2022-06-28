@@ -3,4 +3,4 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/gur-recipes
+    - cd ~/dev/projects/github/gur-recipes
