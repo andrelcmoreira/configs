@@ -37,20 +37,20 @@ c.colors.completion.fg = '#d5c4a1'
 # Background color of the completion widget for odd rows.
 
 # Type: QssColor
-c.colors.completion.odd.bg = '#665c54'
+c.colors.completion.odd.bg = '#333333'
 
 # Background color of the completion widget for even rows.
 # Type: QssColor
-c.colors.completion.even.bg = '#32302f'
+c.colors.completion.even.bg = '#333333'
 
 # Foreground color of completion widget category headers.
 # Type: QtColor
 #c.colors.completion.category.fg = '#fabd2f'
-c.colors.completion.category.fg = '#1b9f94'
+c.colors.completion.category.fg = '#666666'
 
 # Background color of the completion widget category headers.
 # Type: QssColor
-c.colors.completion.category.bg = '#32302f'
+c.colors.completion.category.bg = '#333333'
 
 # Top border color of the completion widget category headers.
 # Type: QssColor
@@ -198,11 +198,11 @@ c.colors.prompts.selected.bg = '#fabd2f'
 
 # Foreground color of the statusbar.
 # Type: QssColor
-c.colors.statusbar.normal.fg = '#8b9b76'
+c.colors.statusbar.normal.fg = '#888888'
 
 # Background color of the statusbar.
 # Type: QssColor
-c.colors.statusbar.normal.bg = '#32302f'
+c.colors.statusbar.normal.bg = '#333333'
 
 # Foreground color of the statusbar in insert mode.
 # Type: QssColor
@@ -290,6 +290,9 @@ c.colors.statusbar.url.success.https.fg = '#8b9b76'
 # Type: QssColor
 c.colors.statusbar.url.warn.fg = '#d3869b'
 
+c.tabs.padding = {'bottom': 5, 'left': 5, 'right': 5, 'top': 5}
+c.tabs.indicator.width = 0
+
 # Background color of the tab bar.
 # Type: QssColor
 c.colors.tabs.bar.bg = '#32302f'
@@ -308,35 +311,35 @@ c.colors.tabs.indicator.error = '#276e63'
 
 # Foreground color of unselected odd tabs.
 # Type: QtColor
-c.colors.tabs.odd.fg = '#d5c4a1'
+c.colors.tabs.odd.fg = '#888888'
 
 # Background color of unselected odd tabs.
 # Type: QtColor
-c.colors.tabs.odd.bg = '#665c54'
+c.colors.tabs.odd.bg = '#333333'
 
 # Foreground color of unselected even tabs.
 # Type: QtColor
-c.colors.tabs.even.fg = '#d5c4a1'
+c.colors.tabs.even.fg = '#888888'
 
 # Background color of unselected even tabs.
 # Type: QtColor
-c.colors.tabs.even.bg = '#32302f'
+c.colors.tabs.even.bg = '#333333'
 
 # Foreground color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.fg = '#32302f'
+c.colors.tabs.selected.odd.fg = '#ffffff'
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = '#d5c4a1'
+c.colors.tabs.selected.odd.bg = '#222222'
 
 # Foreground color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.fg = '#32302f'
+c.colors.tabs.selected.even.fg = '#ffffff'
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = '#d5c4a1'
+c.colors.tabs.selected.even.bg = '#222222'
 
 # Foreground color of pinned unselected odd tabs.
 # Type: QtColor

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+workspaces=$(ls ~/.tmuxp | cut -f1 -d'.')
+lines=$(echo "$workspaces" | wc -l)
+
+selected_ws=$(echo "$workspaces" | rofi -dmenu -p "Select the project" -width 22 -lines "$lines")
+[ -z "$selected_ws" ] || "$TERMINAL" -e "tmuxp load $selected_ws"

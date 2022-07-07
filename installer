@@ -1,44 +1,23 @@
 #!/bin/sh
 
-dev_cfg_dir="${HOME}/.config/dev"
-
-install_pkgs()
-{
-    if git clone https://github.com/carvalhudo/distro-cfg /tmp ; then
-        cd /tmp/distro-cfg
-        python3 src/distro_cfg.py -f "$dev_cfg_dir"/packages.json
-    fi
-}
-
-install_files()
-{
-    if git clone https://github.com/carvalhudo/configs "$dev_cfg_dir" ; then
-        cd "$dev_cfg_dir"
-
-        os_name=$(cat /etc/os-release | grep "^NAME=" | cut -f2 -d'=' | tr -d '"')
-        if git checkout "$os_name" ; then
-            ln -s .profile ~/.profile
-            ln -s .zshrc ~/.zshrc
-            ln -s urxvt/.Xresources ~/.Xresources
-            ln -s tmux/.tmux.conf ~/.tmux.conf
-            ln -s i3/config ~/.config/i3/config
-            ln -s i3/i3blocks/i3blocks.conf /etc/i3blocks.conf
-            ln -s nvim/init.vim ~/.config/nvim/init.vim
-            ln -s rofi/config ~/.config/rofi/config
-            ln -s qutebrowser/config.py ~/.config/qutebrowser/config.py
-            ln -s qutebrowser/quickmarks ~/.config/qutebrowser/quickmarks
-            ln -s ranger/rc.conf ~/.config/ranger/rc.conf
-            ln -s ranger/commands.py ~/.config/ranger/commands.py
-            ln -s compton/compton.conf /etc/xdg/compton.conf
-            ln -s zathura/zathurarc ~/.config/zathura/zathurarc
-            ln -s scripts/* "$SCRIPTS_PATH"
-            ln -s i3/i3blocks/scripts/* "$SCRIPTS_PATH"
-        fi
-    fi
-}
-
-mkdir "$dev_cfg_dir"
-install_pkgs
-install_files
+os_name=$(cat /etc/os-release | grep "^NAME=" | cut -f2 -d'=' | tr -d '"')
+if git checkout "$os_name" ; then
+    ln -s .profile ~/.profile
+    ln -s .zshrc ~/.zshrc
+    ln -s urxvt/.Xresources ~/.Xresources
+    ln -s tmux/.tmux.conf ~/.tmux.conf
+    ln -s i3/config ~/.config/i3/config
+    ln -s i3/i3blocks/i3blocks.conf /etc/i3blocks.conf
+    ln -s nvim/init.vim ~/.config/nvim/init.vim
+    ln -s rofi/config ~/.config/rofi/config
+    ln -s qutebrowser/config.py ~/.config/qutebrowser/config.py
+    ln -s qutebrowser/quickmarks ~/.config/qutebrowser/quickmarks
+    ln -s ranger/rc.conf ~/.config/ranger/rc.conf
+    ln -s ranger/commands.py ~/.config/ranger/commands.py
+    ln -s compton/compton.conf /etc/xdg/compton.conf
+    ln -s zathura/zathurarc ~/.config/zathura/zathurarc
+    ln -s scripts/* "$SCRIPTS_PATH"
+    ln -s i3/i3blocks/scripts/* "$SCRIPTS_PATH"
+fi
 
 exit 0

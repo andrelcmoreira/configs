@@ -1,5 +1,8 @@
 #!/bin/sh
 
 filename="%Y-%m-%d-%T_$wx$h_scrot.png"
-scrot "$filename" -e "mv $filename $IMG_PATH/$filename"
-notify-send 'screen captured'
+scrot -s "$filename" -e "mv $filename $IMG_PATH/$filename"
+
+if [ "$?" -eq 0 ]; then
+  notify-send 'screen captured'
+fi

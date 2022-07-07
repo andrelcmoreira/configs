@@ -1,0 +1,7 @@
+#!/bin/sh
+
+scrot 'screen_lock.png' -e 'mv $f /tmp/'
+i3lock -i /tmp/screen_lock.png
+rm /tmp/screen_lock.png
+
+exit 0

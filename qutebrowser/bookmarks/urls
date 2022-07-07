@@ -1,0 +1,175 @@
+https://suckless.org/sucks/systemd/ software that sucks less | suckless.org software that sucks less
+http://web.archive.org/web/20110727064007/http://elevenislouder.blogspot.com/2010/02/stali.html Eleven is Louder: Stali
+http://harmful.cat-v.org/software/dynamic-linking/ Dynamic Linking
+https://en.wikipedia.org/wiki/C_standard_library C standard library - Wikipedia
+https://filippo.io/escaping-a-chroot-jail-slash-1/ Escaping a chroot jail/1 | PyTux
+https://en.wikipedia.org/wiki/Virtual_method_table Virtual method table - Wikipedia
+https://blogs.igalia.com/itoral/2014/07/29/a-brief-introduction-to-the-linux-graphics-stack/ A brief introduction to the Linux graphics stack | Developer Log
+https://wiki.archlinux.org/index.php/Runit Runit - ArchWiki
+http://smarden.org/runit/ runit - a UNIX init scheme with service supervision
+https://theartofmachinery.com/2019/08/12/c_const_isnt_for_performance.html Why const Doesn't Make C Code Faster — The Art of Machinery
+https://rmarkdown.rstudio.com/lesson-1.html Introduction
+https://en.wikipedia.org/wiki/Linux_startup_process Linux startup process - Wikipedia
+https://fedoramagazine.org/what-is-an-init-system/ What is an init system? - Fedora Magazine
+https://4fasters.com.br/2018/07/24/qual-a-diferenca-entre-wayland-e-x11/ Qual a DIFERENÇA entre WAYLAND e X11? - 4Fasters
+https://www.reddit.com/r/vim/comments/cscq8f/getting_vim_latex_and_a_pdf_viewer_to_work/ Getting Vim, LaTeX, and A PDF Viewer to Work Together : vim
+https://simpliv.wordpress.com/2019/08/06/7-reasons-why-you-should-keep-learning-c-c/ 7 Reasons Why You Should Keep Learning C/C++ – Simpliv LLC
+https://www.reddit.com/r/vim/comments/cnh3ut/what_is_your_vim_workflow/ What is your vim workflow? : vim
+https://hackaday.com/2019/07/30/c20-is-feature-complete-heres-what-changes-are-coming/ C++20 Is Feature Complete; Here’s What Changes Are Coming | Hackaday
+https://www.reddit.com/r/C_Programming/comments/cma6pw/why_is_this_output_compiler_dependent/ Why is this output compiler dependent? : C_Programming
+https://www.reddit.com/r/cpp/comments/cfk9de/201907_cologne_iso_c_committee_trip_report_the/ 2019-07 Cologne ISO C++ Committee Trip Report — 🚀 The C++20 Eagle has Landed 🚀 (C++20 Committee Draft shipped; Contracts Moved From C++20 to a Study Group; `std::format` in C++20; C++20 Synchronization Library) : cpp
+https://www.reddit.com/r/vim/comments/ckyspu/heres_how_to_create_custom_workspaces_to_switch/ Here's how to create custom workspaces to switch between programming and writing prose in Vim : vim
+https://www.reddit.com/r/C_Programming/comments/chndql/program_has_different_output_when_compiled_with/ Program has Different Output when compiled with GCC and Clang : C_Programming
+https://iscinumpy.gitlab.io/post/cpp-20/ C++20 - ISciNumPy
+https://lkml.org/lkml/2019/7/30/1399 LKML: Gabriel Krisman Bertazi: [PATCH RFC 2/2] futex: Implement mechanism to wait on any of several futexes
+https://vim.fandom.com/wiki/Power_of_g Power of g | Vim Tips Wiki | FANDOM powered by Wikia
+https://stackoverflow.com/questions/1675688/make-vim-show-all-white-spaces-as-a-character vi - Make Vim show ALL white spaces as a character - Stack Overflow
+https://medium.com/@vgasparyan1995/a-new-thread-in-c-20-jthread-ebd121ae8906 A new thread in C++20 (jthread) - Vanand Gasparyan - Medium
+https://luncliff.github.io/coroutine/articles/russian-roulette/ Russian Roulette and C++ Coroutines - luncliff/coroutine
+http://www.linuxfromscratch.org/blfs/view/svn/postlfs/initramfs.html About initramfs
+https://flak.tedunangst.com/post/warning-implicit-backdoor warning: implicit backdoor
+http://www.tantalon.com/pete/cppopt/asyougo.htm C++ Optimizations You Can Do "As You Go"
+http://harmful.cat-v.org/software/ All software sucks
+https://duckduckgo.com/?q=dracut+void+linux&ia=web dracut void linux at DuckDuckGo
+https://www.fluentcpp.com/posts/ Posts - Fluent C++
+http://ewontfix.com/14/ EWONTFIX - Broken by design: systemd
+https://qutebrowser.org/doc/userscripts.html Writing qutebrowser userscripts | qutebrowser
+https://github.com/qutebrowser/qutebrowser/tree/master/misc/userscripts qutebrowser/misc/userscripts at master · qutebrowser/qutebrowser
+https://wiki.gentoo.org/wiki/Initramfs/Guide Initramfs/Guide - Gentoo Wiki
+https://wiki.debian.org/initramfs initramfs - Debian Wiki
+https://wiki.ubuntu.com/Initramfs Initramfs - Ubuntu Wiki
+https://www.linux.com/tutorials/kernel-newbie-corner-initrd-and-initramfs-whats/ The Kernel Newbie Corner: "initrd" and "initramfs"-What's Up With That? - Linux.com
+https://wiki.gentoo.org/wiki/Kernel_Modules#Blacklist Kernel modules - Gentoo Wiki
+https://github.com/xuhdev/vim-latex-live-preview GitHub - xuhdev/vim-latex-live-preview: A Vim Plugin for Lively Previewing LaTeX PDF Output
+https://success.docker.com/article/use-a-script-to-initialize-stateful-container-data Docker - How to use an entrypoint script to initialize container data at runtime
+http://blog.plataformatec.com.br/2015/01/organizing-microservices-in-a-single-git-repository/ Organizing microservices in a single git repository « Plataformatec Blog
+https://medium.com/@somakdas/code-repository-for-micro-services-mono-repository-or-multiple-repositories-d9ad6a8f6e0e Code repository for micro-services: mono repository or multiple repositories
+https://github.com/microservices-demo Microservices Demo
+https://softwareengineering.stackexchange.com/questions/386066/how-to-structure-microservices-in-your-repository architecture - How to structure microservices in your repository - Software Engineering Stack Exchange
+https://pt.wikipedia.org/wiki/Lista_de_c%C3%B3digos_de_estado_HTTP Lista de códigos de estado HTTP – Wikipédia, a enciclopédia livre
+http://man7.org/linux/man-pages/man7/namespaces.7.html namespaces(7) - Linux manual page
+https://escotilhalivre.wordpress.com/2015/08/12/namespaces/ Namespaces – Escotilha Livre
+https://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces Namespaces Tutorial: Isolate Your Linux System | Toptal
+https://www.tecmint.com/install-dhcp-server-in-ubuntu-debian/ How to Install a DHCP Server in Ubuntu and Debian
+https://www.google.com.ar/search?q=iptables%20linux iptables linux - Pesquisa Google
+https://canaltech.com.br/software/Conheca-todos-os-formatos-de-audio/ O que é proxy?
+https://flask.palletsprojects.com/en/1.1.x/testing/ Testing Flask Applications — Flask Documentation (1.1.x)
+http://alanpryorjr.com/2019-05-20-flask-api-example/ Flask best practices
+https://github.com/danistefanovic/build-your-own-x danistefanovic/build-your-own-x: 🤓 Build your own (insert technology here)
+https://api.mongodb.com/python/current/migrate-to-pymongo3.html PyMongo 3 Migration Guide — PyMongo 3.9.0 documentation
+https://leportella.com/pt-br/2018/08/24/mongo-db-python-e-mongoengine.html Usando MongoDB com Python e MongoEngine <3 | Leticia Portella
+https://www.amazon.com/Advanced-Programming-UNIX-Environment-Addison-Wesley-ebook/dp/B00DB3G8KY Amazon.com: Advanced Programming in the UNIX Environment: Advanc Progra UNIX Envir_p3 (Addison-Wesley Professional Computing Series) eBook: W. Richard Stevens, Stephen A. Rago: Kindle Store
+https://www.amazon.com.br/Linux-Programming-Interface-System-Handbook/dp/1593272200/ref=pd_sim_14_7?_encoding=UTF8&pd_rd_i=1593272200&pd_rd_r=f0008534-4c6e-4868-8151-f31c486c8641&pd_rd_w=Riel8&pd_rd_wg=MUpYB&pf_rd_p=bff74a53-94d0-4a1f-83b7-878fbc1d98e3&pf_rd_r=K45RB43AFY1TWQZG6BYG&psc=1&refRID=K45RB43AFY1TWQZG6BYG The Linux Programming Interface: A Linux and UNIX System Programming Handbook - Livros na Amazon Brasil- 9781593272203
+https://www.amazon.com.br/Mastering-Algorithms-C-Kyle-Loudon/dp/1565924533/ref=pd_sim_14_8?_encoding=UTF8&pd_rd_i=1565924533&pd_rd_r=f0008534-4c6e-4868-8151-f31c486c8641&pd_rd_w=Riel8&pd_rd_wg=MUpYB&pf_rd_p=bff74a53-94d0-4a1f-83b7-878fbc1d98e3&pf_rd_r=K45RB43AFY1TWQZG6BYG&psc=1&refRID=K45RB43AFY1TWQZG6BYG Mastering Algorithms with C - Livros na Amazon Brasil- 0636920924531
+https://www.amazon.com.br/Flask-Web-Development-Miquel-Grinberg/dp/1491991739/ref=dp_ob_title_bk Flask Web Development 2e - Livros na Amazon Brasil- 9781491991732
+https://www.amazon.com.br/Linux-Device-Drivers-Jonathan-Corbet/dp/0596005903 Linux Device Drivers - Livros na Amazon Brasil- 9780596005900
+https://www.amazon.com.br/Shellcoders-Handbook-Discovering-Exploiting-Security/dp/047008023X The Shellcoder's Handbook: Discovering and Exploiting Security Holes - Livros na Amazon Brasil- 9780470080238
+https://www.amazon.com.br/Hacking-Exploitation-CDROM-Jon-Erickson/dp/1593271441/ref=pd_sim_14_3/136-8760566-3407017?_encoding=UTF8&pd_rd_i=1593271441&pd_rd_r=ab56d0d5-bd80-4aff-a736-8256e96fbc1e&pd_rd_w=PLhog&pd_rd_wg=h1tmy&pf_rd_p=bff74a53-94d0-4a1f-83b7-878fbc1d98e3&pf_rd_r=0DXX4X2ZES3Z12D3HHVT&psc=1&refRID=0DXX4X2ZES3Z12D3HHVT Hacking: The Art of Exploitation [With CDROM] - Livros na Amazon Brasil- 0689145714418
+https://www.amazon.com.br/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470/ref=pd_sim_14_2/136-8760566-3407017?_encoding=UTF8&pd_rd_i=1118026470&pd_rd_r=ab56d0d5-bd80-4aff-a736-8256e96fbc1e&pd_rd_w=PLhog&pd_rd_wg=h1tmy&pf_rd_p=bff74a53-94d0-4a1f-83b7-878fbc1d98e3&pf_rd_r=0DXX4X2ZES3Z12D3HHVT&psc=1&refRID=0DXX4X2ZES3Z12D3HHVT The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws - Livros na Amazon Brasil- 8601404288999
+https://www.amazon.com.br/Understanding-Linux-Kernel-Daniel-Plerre/dp/0596005652/ref=pd_sim_14_1/136-8760566-3407017?_encoding=UTF8&pd_rd_i=0596005652&pd_rd_r=5872ec3e-cd48-474d-bee3-d9634cc597e3&pd_rd_w=6MOY2&pd_rd_wg=Hzf4x&pf_rd_p=bff74a53-94d0-4a1f-83b7-878fbc1d98e3&pf_rd_r=F1ESH55ZFS1SQMFRHB0E&psc=1&refRID=F1ESH55ZFS1SQMFRHB0E Understanding the Linux Kernel - Livros na Amazon Brasil- 9780596005658
+https://www.amazon.com.br/21st-Century-C-Ben-Klemens/dp/1491903899/ref=pd_sim_14_5/136-8760566-3407017?_encoding=UTF8&pd_rd_i=1491903899&pd_rd_r=f0008534-4c6e-4868-8151-f31c486c8641&pd_rd_w=Riel8&pd_rd_wg=MUpYB&pf_rd_p=bff74a53-94d0-4a1f-83b7-878fbc1d98e3&pf_rd_r=K45RB43AFY1TWQZG6BYG&psc=1&refRID=K45RB43AFY1TWQZG6BYG 21st Century C - Livros na Amazon Brasil- 9781491903896
+https://www.amazon.com.br/Black-Holes-Jean-Pierre-Luminet/dp/0521409063/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1525104320&sr=1-1-fkmr1 Black Holes - Livros na Amazon Brasil- 9780521409063
+https://www.amazon.com.br/As-Cr%C3%B4nicas-Marcianas-Ray-Bradbury/dp/8525042129?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1AYT66D3EXP73&keywords=cronicas+marcianas&qid=1525104277&sprefix=cronicas+m%2Cstripbooks%2C209&sr=1-1&ref=sr_1_1 As Crônicas Marcianas - Bolso - Livros na Amazon Brasil- 9788525042125
+https://www.amazon.com.br/12%C2%BA-Planeta-Livro-Cr%C3%B4nicas-Terra/dp/8537006971?keywords=12+planeta&qid=1525104305&sr=1-1&ref=sr_1_1 O 12º planeta: Livro I das crônicas da terra - 9788537006979 - Livros na Amazon Brasil
+https://www.amazon.com.br/Padr%C3%B5es-Projetos-Erich-Gamma/dp/8573076100?tag=goog0ef-20&smid=A1ZZFT5FULY4LN&ascsubtag=a6fabb5d-52d5-4609-9aa0-3a90f4001ac1 Padrões de Projetos: Soluções Reutilizáveis de Software Orientados a Objetos - 9788573076103 - Livros na Amazon Brasil
+https://www.internalpointers.com/post/c-rvalue-references-and-move-semantics-beginners C++ rvalue references and move semantics for beginners - Internal Pointers
+https://www.fluentcpp.com/2018/06/29/7-more-ways-to-get-better-at-c-this-summer-2018-edition/ 7 More Ways to Get Better at C++ This Summer (2018 Edition) - Fluent C++
+https://www.quantstart.com/articles/Function-Objects-Functors-in-C-Part-1/ Function Objects ("Functors") in C++ - Part 1 | QuantStart
+https://www.geeksforgeeks.org/functors-in-cpp/ Functors in C++ - GeeksforGeeks
+https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X Amazon.com: The Pragmatic Programmer: From Journeyman to Master (8601404321023): Andrew Hunt, David Thomas: Books
+https://www.edx.org/micromasters/curtinx-internet-of-things-iot Internet of Things (IoT) | edX
+https://cppcast.com/kevlin-henney/ C++ Patterns
+http://linuxseekernel.blogspot.com/2014/05/platform-device-driver-practical.html Embedded Linux... : Platform Device Driver - a practical approach - 1
+https://lwn.net/Articles/448499/ The platform device API [LWN.net]
+https://mywiki.wooledge.org/Bashism Bashism - Greg's Wiki
+https://pt.wikipedia.org/wiki/Plan_9_from_Bell_Labs Plan 9 from Bell Labs – Wikipédia, a enciclopédia livre
+https://pt.wikipedia.org/wiki/POSIX POSIX – Wikipédia, a enciclopédia livre
+https://www.google.com/search?client=ubuntu&channel=fs&q=shell+process+substitution&ie=utf-8&oe=utf-8 shell process substitution - Pesquisa Google
+https://askubuntu.com/questions/1059265/whats-the-problem-with-bashisms command line - What's the problem with Bashisms? - Ask Ubuntu
+https://www.freecodecamp.org/news/fzf-a-command-line-fuzzy-finder-missing-demo-a7de312403ff/ Why you should be using fzf, the command line fuzzy finder
+https://medium.com/@andrestc/implementing-malloc-and-free-ba7e7704a473 Implementing malloc and free - André Carvalho - Medium
+http://geocar.sdf1.org/fast-servers.html fast-servers
+https://www.ibm.com/support/knowledgecenter/ssw_aix_72/kernelextension/intro_kernproc.html Introduction to Kernel Processes
+https://developer.ibm.com/technologies/linux/articles/l-kernel-memory-access/ User space memory access from the Linux kernel – IBM Developer
+https://0xax.gitbooks.io/linux-insides/content/Theory/linux-theory-1.html Paging · Linux Inside
+http://geocar.sdf1.org/vim-hints.html vim-hints
+https://gist.github.com/shakna-israel/4fd31ee469274aa49f8f9793c3e71163#lets-destroy-c Let's Destroy C
+https://stackoverflow.blog/2020/01/20/what-is-rust-and-why-is-it-so-popular/ What is Rust and why is it so popular? - Stack Overflow Blog
+https://www.mentebinaria.com.br/artigos/como-s%C3%A3o-feitos-os-keygens-r27/ Como são feitos os keygens - Artigos - Mente Binária
+https://www.mentebinaria.com.br/artigos/alterando-o-comportamento-de-um-execut%C3%A1vel-r21/ Alterando o comportamento de um executável - Artigos - Mente Binária
+https://www.mentebinaria.com.br/artigos/como-hookei-a-execve-em-x86-64-num-lsm-r25/ Como hookei a execve() em x86-64 num LSM - Artigos - Mente Binária
+https://m0nadlabs.wordpress.com/2012/01/ janeiro | 2012 | m0nad's Blog
+https://m0nadlabs.wordpress.com/2011/12/ dezembro | 2011 | m0nad's Blog
+https://0xcd80.wordpress.com/ \xcd\x80
+https://universemachine.wordpress.com/ Cyberspace Strikes Back... | The Universe is a Machine
+https://coolerlab.wordpress.com/ Cooler's Lab | Just another coder blog in pt-BR
+https://m0nadlabs.wordpress.com/ m0nad's Blog | Just another WordPress.com site
+https://m0nadlabs.wordpress.com/2012/01/23/return-oriented-programming-na-unha/ Return-Oriented Programming na unha! | m0nad's Blog
+https://raw.githubusercontent.com/m0nad/Papers/master/ret2libc.txt https://raw.githubusercontent.com/m0nad/Papers/master/ret2libc.txt
+https://m0nadlabs.wordpress.com/2012/03/ março | 2012 | m0nad's Blog
+https://m0nadlabs.wordpress.com/2015/11/ novembro | 2015 | m0nad's Blog
+https://www.amazon.com.br/Automate-Boring-Stuff-Python-Programming/dp/1593275994 Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Livros na Amazon Brasil- 9781593275990
+https://www.amazon.com/-/pt/Architecture-Open-Source-Applications/dp/1257638017/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr= Amazon.com: The Architecture Of Open Source Applications (9781257638017): Amy Brown, Greg Wilson: Books
+https://www.patricksoftwareblog.com/testing-a-flask-application-using-pytest/ Testing a Flask Application using pytest – Patrick's Software Blog
+https://pybit.es/pytest-fixtures.html PyBites – All You Need to Know to Start Using Fixtures in Your pytest Code
+https://docs.pytest.org/en/2.7.3/plugins.html?highlight=re Working with plugins and conftest files
+https://docs.pytest.org/en/latest/fixture.html pytest fixtures: explicit, modular, scalable — pytest documentation
+https://www.amazon.com.br/Humans-are-not-Earth-scientific/dp/0955011698 Humans are not from Earth: a scientific evaluation of the evidence - Livros na Amazon Brasil- 9780955011696
+https://medium.com/me/list/queue Medium
+https://0x00sec.org/t/linux-internals-dynamic-linking-wizardry/1082 Linux Internals ~ Dynamic Linking Wizardry - Linux - 0x00sec - The Home of the Hacker
+http://www.qnx.com/developers/docs/7.0.0/index.html#com.qnx.doc.neutrino.prog/topic/devel_Lazy_binding.html - Lazy binding
+https://www.geeksforgeeks.org/understanding-extern-keyword-in-c/?ref=rp Understanding "extern" keyword in C - GeeksforGeeks
+https://www.geeksforgeeks.org/understanding-register-keyword/?ref=rp Understanding "register" keyword in C - GeeksforGeeks
+https://www.geeksforgeeks.org/understanding-constexper-specifier-in-c/?ref=rp Understanding constexpr specifier in C++ - GeeksforGeeks
+https://www.geeksforgeeks.org/understanding-volatile-qualifier-in-c/?ref=rp Understanding "volatile" qualifier in C | Set 2 (Examples) - GeeksforGeeks
+https://www.geeksforgeeks.org/understanding-volatile-qualifier-c-set-1-introduction/?ref=rp Understanding "volatile" qualifier in C | Set 1 (Introduction) - GeeksforGeeks
+https://www.geeksforgeeks.org/understanding-lvalues-prvalues-and-xvalues-in-ccwith-examples/?ref=rp Understanding Lvalues, PRvalues and Xvalues in C/C++ with Examples - GeeksforGeeks
+https://www.geeksforgeeks.org/g-fact-93/?ref=rp Use of explicit keyword in C++ - GeeksforGeeks
+https://www.geeksforgeeks.org/restrict-keyword-c/?ref=rp restrict keyword in C - GeeksforGeeks
+https://www.geeksforgeeks.org/extern-c-in-c/ Name Mangling and extern "C" in C++ - GeeksforGeeks
+https://www.ibm.com/developerworks/linux/library/l-scheduler/index.html Inside the Linux scheduler
+https://www.ibm.com/developerworks/linux/library/l-linux-synchronization/index.html Anatomy of Linux synchronization methods
+https://www.ibm.com/developerworks/linux/library/l-real-time-linux/index.html Anatomy of real-time Linux architectures
+https://www.ibm.com/developerworks/linux/library/l-flash-filesystems/index.html Anatomy of Linux flash file systems
+https://www.ibm.com/developerworks/linux/library/l-journaling-filesystems/index.html Anatomy of Linux journaling file systems
+https://www.amazon.com.br/Nosso-Especial-Francisco-Candido-Xavier/dp/8573286717 Nosso Lar Especial - 9788573286717 - Livros na Amazon Brasil
+https://www.embarcados.com.br/conhecendo-a-macro-container_of/ Conhecendo a macro container_of na linguagem C - Embarcados
+https://docs.mongodb.com/manual/tutorial/enable-authentication/ Enable Access Control — MongoDB Manual
+https://api.mongodb.com/python/current/examples/authentication.html Authentication Examples — PyMongo 3.9.0 documentation
+https://github.com/tutumcloud/mongodb/blob/master/3.2/set_mongodb_password.sh mongodb/set_mongodb_password.sh at master · tutumcloud/mongodb
+https://www.amazon.com.br/Hacking-Xbox-Introduction-Reverse-Engineering/dp/1593270291 Hacking the Xbox – An Introduction to Reverse Engineering - Livros na Amazon Brasil- 0689145702910
+https://www.amazon.com.br/Hardware-Hacker-hardback-Andrew-Huang/dp/159327758X/ref=pd_sim_14_1/136-8760566-3407017?_encoding=UTF8&pd_rd_i=159327758X&pd_rd_r=585bef67-fcc5-4006-a900-ef87279a8490&pd_rd_w=ghYMU&pd_rd_wg=3Wk7d&pf_rd_p=dac87a15-725a-4004-9372-fed662711a89&pf_rd_r=1V3Y8GEQ5CCWPNCDT2G9&psc=1&refRID=1V3Y8GEQ5CCWPNCDT2G9 The Hardware Hacker (hardback) - Livros na Amazon Brasil- 9781593277581
+https://www.amazon.com/Hacking-Xbox-Introduction-Reverse-Engineering/dp/1593270291 Amazon.com: Hacking the Xbox: An Introduction to Reverse Engineering (0689145702910): Andrew Huang: Books
+http://turbochaos.blogspot.com/2013/09/linux-rootkits-101-1-of-3.html Linux Rootkits 101 (1 of 3) | Chaotic Security
+https://dbader.org/blog/python-ctypes-tutorial-part-2 Interfacing Python and C: Advanced “ctypes” Features – dbader.org
+https://www.linuxnix.com/suid-set-suid-linuxunix/ What is SUID and how to set SUID in Linux/Unix? - The Linux Juggernaut
+https://www.geeksforgeeks.org/executing-main-in-c-behind-the-scene/ Executing main() in C/C++ - behind the scene - GeeksforGeeks
+https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/ Application Factories — Flask Documentation (1.1.x)
+https://softwareengineering.stackexchange.com/questions/95556/what-is-the-advantage-of-little-endian-format architecture - What is the advantage of little endian format? - Software Engineering Stack Exchange
+https://github.com/jakewright/tutorials/blob/master/home-automation/02-device-registry/README.md tutorials/README.md at master · jakewright/tutorials
+https://itnext.io/how-and-why-have-a-properly-configuration-handling-file-using-flask-1fd925c88f4c How and why have a properly “Configuration Handling File” using Flask? | by Felipe Florencio Garcia | ITNEXT
+https://damyanon.net/post/flask-series-testing/ How to Test a Flask Application
+https://uynguyen.github.io/2018/04/30/Big-Endian-vs-Little-Endian/ Big Endian vs Little Endian - Uy Nguyen
+https://hackersandslackers.com/flask-application-factory/ Demystifying Flask's Application Factory And the Application Context
+https://www.reddit.com/r/BSD/comments/hkim31/is_ghostbsd_a_good_os_for_my_grandma/ Is GhostBSD a good OS for my grandma? : BSD
+https://florianeinfalt.de/posts/fluent-interfaces-in-python/ Fluent interfaces in Python | Florian Einfalt – Developer
+https://flask-jwt-extended.readthedocs.io/en/stable/add_custom_data_claims/ Storing Data in Access Tokens — flask-jwt-extended 3.24.1 documentation
+https://realpython.com/token-based-authentication-with-flask/#database-setup Token-Based Authentication With Flask – Real Python
+https://training.linuxfoundation.org/training/introduction-to-cloud-infrastructure-technologies/ Introduction to Cloud Infrastructure Technologies (LFS151) - Linux Foundation - Training
+https://flask-jwt-extended.readthedocs.io/en/stable/basic_usage/ Basic Usage — flask-jwt-extended 3.24.1 documentation
+https://codeburst.io/jwt-authorization-in-flask-c63c1acf4eeb JWT authorization in Flask. JSON Web Tokens (JWT) are very popular… | by Oleg Agapov | codeburst
+https://flask-jwt-extended.readthedocs.io/en/stable/api/#flask_jwt_extended.JWTManager.unauthorized_loader API Documentation — flask-jwt-extended 3.24.1 documentation
+https://github.com/vimalloc/flask-jwt-extended/issues/14 When using application factory where should I be putting my jwt.callbacks? · Issue #14 · vimalloc/flask-jwt-extended
+https://medium.com/@otaviobn/tdd-com-flask-e-unittest-3f66036a240b TDD com Flask e Unittest. Ao criar um projeto de software é… | by Otavio Braga | Medium
+https://flask.palletsprojects.com/en/1.1.x/testing/#testing Testing Flask Applications — Flask Documentation (1.1.x)
+https://flask.palletsprojects.com/en/1.1.x/testing/#faking-resources-and-context Testing Flask Applications — Flask Documentation (1.1.x)
+https://docs.python.org/3/library/unittest.html unittest — Unit testing framework — Python 3.9.0 documentation
+https://www.toptal.com/python/an-introduction-to-mocking-in-python Python Mocking: A Guide to Better Unit Tests | Toptal
+https://realpython.com/python-mock-library/#:~:text=mock%20provides%20a%20powerful%20mechanism,will%20mock%20the%20target%20object. Understanding the Python Mock Object Library – Real Python
+https://lwn.net/Articles/132196/ An introduction to KProbes [LWN.net]
+https://www.ibm.com/developerworks/library/l-kprobes/index.html Kernel debugging with Kprobes
+https://github.com/AndyLavr/lkrg-experimental/blob/4db1678722b0f0fb5db5c662e4f59ad4555fb56c/src/modules/exploit_detection/syscalls/p_do_init_module/p_do_init_module.c lkrg-experimental/p_do_init_module.c at 4db1678722b0f0fb5db5c662e4f59ad4555fb56c · AndyLavr/lkrg-experimental
+https://www.google.com.ar/search?q=python%20firebase python firebase - Pesquisa Google
+https://www.google.com.ar/search?q=python%20splunk python splunk - Pesquisa Google
+https://rednafi.github.io/digressions/python/2020/04/05/python-singledispatch.html Generic Functions with Python’s Singledispatch | Red’s Digressions
+https://stevens.netmeister.org/631/ Advanced Programming in the UNIX Environment
