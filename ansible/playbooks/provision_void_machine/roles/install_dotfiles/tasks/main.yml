@@ -1,0 +1,55 @@
+---
+
+- name: Download dotfiles
+  get_url:
+    url: https://github.com/carvalhudo/configs/archive/refs/heads/void.zip
+    dest: "{{ global.dotfiles_path }}.zip"
+
+- name: Extract dotfiles
+  unarchive:
+    remote_src: yes
+    src: "{{ global.dotfiles_path }}.zip"
+    dest: "/home/{{ global.user }}/downloads" # TODO: change dest
+
+- name: Deploy tmux config
+  file:
+    src: "{{ global.dotfiles_path }}/tmux/.tmux.conf"
+    dest: "/home/{{ global.user }}/.tmux.conf"
+    owner: "{{ global.user }}"
+    group: "{{ global.user }}"
+    state: link
+
+- name: Deploy nvim config
+  file:
+    src: "{{ global.dotfiles_path }}/nvim/init.vim"
+    dest: "/home/{{ global.user }}/.config/nvim/init.vim"
+    owner: "{{ global.user }}"
+    group: "{{ global.user }}"
+    state: link
+
+- name: Deploy i3 config
+  file:
+    src: "{{ global.dotfiles_path }}/i3/config"
+    dest: "/home/{{ global.user }}/.config/i3/config"
+    owner: "{{ global.user }}"
+    group: "{{ global.user }}"
+    state: link
+
+- name: Deploy i3blocks config
+  become: true
+  become_user: root
+  file:
+    src: "{{ global.dotfiles_path }}/i3/i3blocks/i3blocks.conf"
+    dest: "/etc/i3blocks.conf"
+    state: link
+    force: yes
+
+- name: Deploy newsboat config
+  file:
+    src: "{{ global.dotfiles_path }}/newsboat/config"
+    dest: "/home/{{ global.user }}/.newsboat/config"
+    owner: "{{ global.user }}"
+    group: "{{ global.user }}"
+    state: link
+
+...

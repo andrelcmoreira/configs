@@ -1,0 +1,7 @@
+---
+
+global:
+  dotfiles_path: /home/andre/downloads/configs-void
+  user: andre
+
+...

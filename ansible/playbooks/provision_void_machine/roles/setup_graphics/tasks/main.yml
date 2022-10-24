@@ -1,0 +1,19 @@
+---
+
+- name: Enable dbus service
+  become: true
+  become_user: root
+  file:
+    src: "/etc/sv/dbus"
+    dest: "/var/service/dbus"
+    state: link
+
+- name: Enable lightdm service
+  become: true
+  become_user: root
+  file:
+    src: "/etc/sv/lightdm"
+    dest: "/var/service/lightdm"
+    state: link
+
+...
