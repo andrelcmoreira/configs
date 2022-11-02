@@ -26,7 +26,6 @@ MiscSlimTabs=FALSE
 MiscNewTabAdjacent=FALSE
 MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=FALSE
-FontName=SauceCodePro Nerd Font Bold 18
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 ColorBackground=#3a3a3a
 ColorForeground=#dcdccc
