@@ -6,25 +6,21 @@ call plug#begin()
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'airblade/vim-gitgutter'
-    Plug 'PotatoesMaster/i3-vim-syntax'
     Plug 'tpope/vim-fugitive'
     Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
     Plug 'tpope/vim-surround'
     Plug 'rbgrouleff/bclose.vim'
     Plug 'francoiscabrol/ranger.vim'
     Plug 'dense-analysis/ale'
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'deoplete-plugins/deoplete-jedi'
-    Plug 'zchee/deoplete-clang'
     Plug 'SirVer/ultisnips'
     Plug 'carvalhudo/vim-snippets'
-    Plug 'sakhnik/nvim-gdb'
     Plug 'wincent/ferret'
-    Plug 'kenn7/vim-arsync'
     Plug 'mg979/vim-visual-multi'
     Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
     Plug 'mhinz/vim-startify'
+    "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'tag': 'v0.0.81'}
 call plug#end()
 " }}}
 
@@ -39,18 +35,14 @@ syntax on
 filetype detect
 set showmatch
 
-let g:deoplete#enable_at_startup = 1
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<c-b>"
 let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 let g:UltiSnipsEditSplit = "vertical"
 
-let g:deoplete#sources#clang#libclang_path = "/usr/lib/libclang.so"
-let g:deoplete#sources#clang#clang_header = "/usr/lib/clang/"
-let g:deoplete#sources#clang#include_default_arguments = "True"
-let g:deoplete#sources#jedi#show_docstring = 1
 let g:mkdp_browser = "qutebrowser"
-let g:bootlin_version = "5.7.18"
+
+let g:coc_disable_startup_warning = 1
 " }}}
 
 " Appearance {{{
@@ -82,8 +74,8 @@ highlight VertSplit ctermbg=238 ctermfg=237
 
 " Indentation {{{
 set ai
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 " }}}
 
