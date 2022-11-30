@@ -27,7 +27,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 # Directory to save downloads to. If unset, a sensible OS-specific
 # default is used.
 # Type: Directory
-c.downloads.location.directory = '/home/andre/Downloads'
+c.downloads.location.directory = '/home/andre/downloads'
 
 # Text color of the completion widget. May be a single color to use for
 # all columns or a list of three colors, one for each column.
