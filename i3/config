@@ -1,8 +1,5 @@
 # removing window border
-#for_window [class="^.*"] border pixel 4
 for_window [class="^.*"] border pixel 0
-#for_window [class="mpv"] floating enable
-for_window [class="espotifai-gui"] floating enable
 new_window 1pixel
 
 gaps inner 4
@@ -175,6 +172,9 @@ for_window [class="Telegram"] focus
 
 for_window [class="mpv"] move to workspace $ws1
 for_window [class="mpv"] focus
+
+for_window [class="Spotify"] move to workspace $ws1
+for_window [class="Spotify"] focus
 
 for_window [class="Kicad"] move to workspace $ws7
 for_window [class="Kicad"] focus
