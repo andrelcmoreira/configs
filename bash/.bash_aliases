@@ -19,6 +19,7 @@ alias gps="git push origin"
 alias gch="git checkout"
 alias gcp="git cherry-pick"
 alias gcl="git clone"
+alias gdf="git diff"
 
 # others
 alias v="vim"
