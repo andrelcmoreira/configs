@@ -18,6 +18,7 @@ alias gpl="git pull origin"
 alias gps="git push origin"
 alias gch="git checkout"
 alias gcp="git cherry-pick"
+alias gcl="git clone"
 
 # others
 alias v="vim"
