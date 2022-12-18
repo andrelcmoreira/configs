@@ -1,9 +1,11 @@
 # pkg manager aliases
 alias pkg-install="sudo xbps-install -Sv"
-alias pkg-search="xbps-query -Rs"
 alias pkg-remove="sudo xbps-remove -Rv"
 alias pkg-upgrade="sudo xbps-install -Suyv"
 alias pkg-update="sudo xbps-install -Sv"
+alias pkg-search="xbps-query -Rs"
+alias pkg-list="xbps-query -l"
+alias pkg-show="xbps-query -RS"
 
 # git aliases
 alias gs="git status"
