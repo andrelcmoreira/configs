@@ -2,9 +2,6 @@
 for_window [class="^.*"] border pixel 0
 new_window 1pixel
 
-gaps inner 4
-gaps outer 8
-
 # spotify controls
 bindsym XF86AudioNext exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
 bindsym XF86AudioPrev exec "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
