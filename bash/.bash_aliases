@@ -6,6 +6,7 @@ alias pkg-update="sudo xbps-install -Sv"
 alias pkg-search="xbps-query -Rs"
 alias pkg-list="xbps-query -l"
 alias pkg-show="xbps-query -RS"
+alias pkg-count="pkg-list | wc -l"
 
 # git aliases
 alias gs="git status"
