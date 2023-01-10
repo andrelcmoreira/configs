@@ -7,6 +7,7 @@ alias pkg-search="xbps-query -Rs"
 alias pkg-list="xbps-query -l"
 alias pkg-show="xbps-query -RS"
 alias pkg-count="pkg-list | wc -l"
+alias pkg-clean="sudo xbps-remove -O"
 
 # git aliases
 alias gs="git status"
