@@ -3,13 +3,13 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/github/pyfce
+    - cd ~/dev/projects/pyfce
     - nv pyfce.py
 
 - window_name: test
   layout: main-horizontal
   shell_command_before:
-    - cd ~/dev/projects/github/pyfce
+    - cd ~/dev/projects/pyfce
   panes:
     - shell_command:
         - source venv/bin/activate

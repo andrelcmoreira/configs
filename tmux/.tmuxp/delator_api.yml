@@ -3,14 +3,14 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/github/delator-api
+    - cd ~/dev/projects/delator-api
   panes:
     - nv app/app.py
 
 - window_name: test
   layout: main-horizontal
   shell_command_before:
-    - cd ~/dev/projects/github/delator-api
+    - cd ~/dev/projects/delator-api
   panes:
     - docker-compose up db
     - shell_command:
