@@ -1,0 +1,8 @@
+session_name: sg-server
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd ~/dev/projects/smart-garden-server
+  panes:
+    - nv app.py
