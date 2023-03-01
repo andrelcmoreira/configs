@@ -1,5 +1,6 @@
 # removing window border
 for_window [class="^.*"] border pixel 0
+for_window [class="gnome-calculator"] floating enable
 new_window 1pixel
 
 gaps inner 4
