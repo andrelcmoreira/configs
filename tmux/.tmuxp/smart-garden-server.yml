@@ -5,4 +5,4 @@ windows:
   shell_command_before:
     - cd ~/dev/projects/smart-garden-server
   panes:
-    - nv app.py
+    - nv run.py
