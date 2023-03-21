@@ -21,9 +21,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
 
 # print screen shortcut
-bindsym $mod+Shift+s exec $SCRIPTS_PATH/print_screen
+bindsym $mod+Shift+s exec $SCRIPTS/print_screen
 
-bindsym $mod+Shift+m exec /bin/sh $SCRIPTS_PATH/session_manager
+bindsym $mod+Shift+m exec /bin/sh $SCRIPTS/session_manager
 
 # launch rofi
 bindsym $mod+d exec "rofi -modi run,drun -show drun -show-icons -display-drun 'Choose the app' -drun-display-format {name} -line-padding 3"
@@ -32,10 +32,10 @@ bindsym $mod+d exec "rofi -modi run,drun -show drun -show-icons -display-drun 'C
 bindsym $mod+u exec "qsudo /usr/bin/usb-rofi -u"
 
 # launch tmux section selector script
-bindsym $mod+Shift+d exec $SCRIPTS_PATH/tmux_session_selector
+bindsym $mod+Shift+d exec $SCRIPTS/tmux_session_selector
 
 # launche workspace selector
-bindsym $mod+Shift+w exec /bin/sh $SCRIPTS_PATH/workspace-selector
+bindsym $mod+Shift+w exec /bin/sh $SCRIPTS/workspace-selector
 
 # launch telegram
 bindsym $mod+Shift+t exec telegram-desktop
