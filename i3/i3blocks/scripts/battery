@@ -1,24 +1,29 @@
 #!/bin/sh
 
-CMD_OUT=$(acpi -b)
-PERCENT=$(echo "$CMD_OUT" | awk '{print $4}' | tr -d ',' | tr -d '%')
-STATUS=$(echo "$CMD_OUT" | awk '{print $3}' | tr -d ',' | tr '[:upper:]' '[:lower:]')
-LOAD_TIME=$(echo "$CMD_OUT" | awk '{print $5}')
+CMD_OUT=$(acpi -b | tr -d ',')
+PERCENT=$(echo "$CMD_OUT" | awk '{print $4}' | tr -d '%')
+STATUS_STR=$(echo "$CMD_OUT" | awk '{print $3}')
 
-if [ "$PERCENT" -gt 90 ]; then
-    ICON=
-elif [ "$PERCENT" -lt 91 ] && [ "$PERCENT" -gt 74 ]; then
-    ICON=
-elif [ "$PERCENT" -lt 75 ] && [ "$PERCENT" -gt 49 ]; then
-    ICON=
-elif [ "$PERCENT" -lt 50 ] && [ "$PERCENT" -gt 5 ]; then
-    ICON=
+if [ "$STATUS_STR" = "Charging" ]; then
+  STATUS="+"
+elif [ "$STATUS_STR" = "Discharging" ]; then
+  STATUS="-"
 else
-    ICON=
+  STATUS=""
 fi
 
-[ "$STATUS" = "full" ] && \
-  echo "${ICON}"\ "${PERCENT}"% || \
-  echo "${ICON}"\ "${STATUS}" "${PERCENT}"% \("$LOAD_TIME"\)
+if [ "$PERCENT" -gt 90 ]; then
+  ICON=
+elif [ "$PERCENT" -lt 91 ] && [ "$PERCENT" -gt 74 ]; then
+  ICON=
+elif [ "$PERCENT" -lt 75 ] && [ "$PERCENT" -gt 49 ]; then
+  ICON=
+elif [ "$PERCENT" -lt 50 ] && [ "$PERCENT" -gt 5 ]; then
+  ICON=
+else
+  ICON=
+fi
+
+echo "${ICON}" "${STATUS}" "${PERCENT}"%
 
 exit 0
