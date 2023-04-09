@@ -3,6 +3,15 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/smart-garden-server
+    - cd $PROJECTS/smart-garden-server
   panes:
     - nv run.py
+    - ~/.local/bin/nose2 -c tests/nose.cfg
+
+- window_name: test
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/smart-garden-server
+  panes:
+    - SECRET_KEY=xablau python3 run.py
+    - cd scripts/requests
