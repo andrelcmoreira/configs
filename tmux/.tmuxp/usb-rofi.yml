@@ -3,7 +3,6 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/usb-rofi
+    - cd $PROJECTS/usb-rofi
   panes:
-    - nv src/usb-rofi.sh
-
+    - nv src/usb-rofi.in
