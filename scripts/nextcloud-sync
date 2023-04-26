@@ -1,7 +1,6 @@
 #!/bin/bash
 
-BASE_DIR="/home/andre"
-SOURCE_DIR="$BASE_DIR/docs/cloud"
-TARGET_DIR="$BASE_DIR/.nextcloud/Documents/laptop"
+SOURCE_DIR="$HOME/docs"
+TARGET_DIR="$HOME/.nextcloud/Documents/void-docs"
 
 cp -rf "$SOURCE_DIR"/* "$TARGET_DIR"
