@@ -21,6 +21,7 @@ call plug#begin()
     Plug 'mhinz/vim-startify'
     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc.nvim', {'tag': 'v0.0.81'}
+    Plug 'easymotion/vim-easymotion'
 call plug#end()
 " }}}
 
