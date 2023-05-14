@@ -1,7 +1,5 @@
 " Plugins {{{
 call plug#begin()
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'junegunn/fzf.vim'
     Plug 'jiangmiao/auto-pairs'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -22,6 +20,7 @@ call plug#begin()
     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc.nvim', {'tag': 'v0.0.81'}
     Plug 'easymotion/vim-easymotion'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 call plug#end()
 " }}}
 
@@ -100,11 +99,11 @@ nnoremap <leader>o  o<Esc>
 nnoremap <leader>O  O<Esc>
 nnoremap <leader>cf :!clang-format -i --style=Google %<Esc><cr>:e<Esc>
 
-" fzf hotkeys
-nnoremap <c-p> :Files<cr>
-nnoremap <c-f> :Ack<space>
-nnoremap <c-e> :History:<cr>
-nnoremap <c-b> :Buffers<cr>
+" telescope hotkeys
+nnoremap <c-p> :Telescope find_files<cr>
+nnoremap <c-f> :Telescope live_grep<cr>
+nnoremap <c-e> :Telescope command_history<cr>
+nnoremap <c-b> :Telescope buffers<cr>
 
 " navigation hotkeys
 nnoremap <leader>l <c-w><Right>
@@ -119,7 +118,7 @@ noremap <Left>  <Nop>
 noremap <Right> <Nop>
 
 " git hotkeys
-nnoremap <leader>gs  :Git<cr>
+nnoremap <leader>gs  :Telescope git_status<cr>
 nnoremap <leader>gc  :Git commit<cr>
 nnoremap <leader>gca :Git commit --amend<cr>
 nnoremap <leader>gh  :diffget //2<cr>
