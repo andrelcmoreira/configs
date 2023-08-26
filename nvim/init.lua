@@ -25,21 +25,21 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
 vim.call('plug#end')
 
 -- plugin config
-vim.cmd('let g:UltiSnipsExpandTrigger = "<tab>"')
-vim.cmd('let g:UltiSnipsJumpForwardTrigger = "<c-b>"')
-vim.cmd('let g:UltiSnipsJumpBackwardTrigger = "<c-z>"')
-vim.cmd('let g:UltiSnipsEditSplit = "vertical"')
-vim.cmd('let g:mkdp_browser = "qutebrowser"')
-vim.cmd('let g:coc_disable_startup_warning = 1')
-vim.cmd('let g:airline_theme = "zenburn"')
-vim.cmd('let g:airline_symbols_ascii = 1')
+vim.g.UltiSnipsExpandTrigger = "<tab>"
+vim.g.UltiSnipsJumpForwardTrigger = "<c-b>"
+vim.g.UltiSnipsJumpBackwardTrigger = "<c-z>"
+vim.g.UltiSnipsEditSplit = "vertical"
+vim.g.mkdp_browser = "qutebrowser"
+vim.g.coc_disable_startup_warning = 1
+vim.g.airline_theme = "zenburn"
+vim.g.airline_symbols_ascii = 1
 
 -- appearence
-vim.cmd('set relativenumber')
-vim.cmd('set number')
+vim.wo.relativenumber = true
+vim.wo.number = true
+vim.wo.cursorline = true
+vim.o.background = 'dark'
 vim.cmd('colorscheme zenburn')
-vim.cmd('set background=dark')
-vim.cmd('set cursorline')
 
 vim.cmd('highlight cursorline cterm=none term=none ctermbg=238')
 vim.cmd('highlight CursorLineNR cterm=none ctermbg=238')
