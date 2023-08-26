@@ -55,10 +55,10 @@ vim.cmd([[
 ]])
 
 -- FIXME
-if (vim.bo.filetype == 'cpp') or (vim.bo.filetype == 'cpp') or (vim.bo.filetype == 'python') then
-  vim.cmd('let &colorcolumn=join(range(81,999),",")')
-  vim.cmd('highlight ColorColumn ctermbg=238 guibg=lightgrey')
-end
+--if (vim.bo.filetype == 'c') or (vim.bo.filetype == 'cpp') or (vim.bo.filetype == 'python') then
+vim.cmd('let &colorcolumn=join(range(81,999),",")')
+vim.cmd('highlight ColorColumn ctermbg=238 guibg=lightgrey')
+--end
 
 -- misc
 vim.cmd('set hidden')
@@ -81,8 +81,8 @@ vim.cmd('set expandtab')
 vim.g.mapleader = " "
 
 vim.cmd([[
-  nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
-  nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+  nnoremap <leader>ev :vsplit ~/.config/nvim/init.lua<cr>
+  nnoremap <leader>sv :source ~/.config/nvim/init.lua<cr>
   nnoremap <leader>pu :PlugUpdate<cr>
   nnoremap <leader>tt :8Term<cr>
   nnoremap <leader>w  :w<cr>
