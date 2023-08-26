@@ -124,19 +124,6 @@ nnoremap <leader>gca :Git commit --amend<cr>
 nnoremap <leader>gh  :diffget //2<cr>
 nnoremap <leader>gl  :diffget //3<cr>
 
-if (&ft == 'c') || (&ft == 'cpp')
-    nnoremap <leader>c _i//<Esc>
-    nnoremap <leader>u _xx
-    iabbrev dbg printf("%s:%d\n", __FUNCTION__, __LINE__);
-elseif (&ft == 'python') || (&ft == 'sh') || (&ft == 'yaml')
-    nnoremap <leader>c _i#<Esc>
-    nnoremap <leader>u _x
-elseif (&ft == 'markdown')
-    if executable('pandoc')
-        nnoremap <leader>cm :silent !pandoc -s -o %.pdf % && zathura %.pdf &<cr><cr>
-    endif
-endif
-
 nnoremap <a-;> <Esc>
 cnoremap <a-;> <Esc>
 tnoremap <a-;> <Esc>
