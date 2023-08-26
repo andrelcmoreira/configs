@@ -84,7 +84,6 @@ vim.cmd([[
   nnoremap <leader>ev :vsplit ~/.config/nvim/init.lua<cr>
   nnoremap <leader>sv :source ~/.config/nvim/init.lua<cr>
   nnoremap <leader>pu :PlugUpdate<cr>
-  nnoremap <leader>tt :8Term<cr>
   nnoremap <leader>w  :w<cr>
   nnoremap <leader>bc :Bclose<cr>
   nnoremap <leader>nh :noh<cr>
@@ -93,7 +92,6 @@ vim.cmd([[
   nnoremap <leader>tn :tabnext<cr>
   nnoremap <leader>tp :tabprevious<cr>
   nnoremap <leader>tc :tabclose<cr>
-  nnoremap <leader>m  :Man<cr>
   nnoremap <leader>o  o<Esc>
   nnoremap <leader>O  O<Esc>
 ]])
