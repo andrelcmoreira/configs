@@ -41,16 +41,18 @@ vim.wo.cursorline = true
 vim.o.background = 'dark'
 vim.cmd('colorscheme zenburn')
 
-vim.cmd('highlight cursorline cterm=none term=none ctermbg=238')
-vim.cmd('highlight CursorLineNR cterm=none ctermbg=238')
-vim.cmd('highlight LineNr cterm=none ctermfg=grey ctermbg=238')
-vim.cmd('highlight ALEErrorSign ctermbg=238')
-vim.cmd('highlight ALEWarningSign ctermbg=238')
-vim.cmd('highlight SignColumn ctermbg=238')
-vim.cmd('highlight GitGutterAdd ctermfg=green ctermbg=238')
-vim.cmd('highlight GitGutterDelete ctermfg=red ctermbg=238')
-vim.cmd('highlight GitGutterChange ctermfg=grey ctermbg=238')
-vim.cmd('highlight VertSplit ctermbg=238 ctermfg=237')
+vim.cmd([[
+  highlight cursorline cterm=none term=none ctermbg=238
+  highlight CursorLineNR cterm=none ctermbg=238
+  highlight LineNr cterm=none ctermfg=grey ctermbg=238
+  highlight ALEErrorSign ctermbg=238
+  highlight ALEWarningSign ctermbg=238
+  highlight SignColumn ctermbg=238
+  highlight GitGutterAdd ctermfg=green ctermbg=238
+  highlight GitGutterDelete ctermfg=red ctermbg=238
+  highlight GitGutterChange ctermfg=grey ctermbg=238
+  highlight VertSplit ctermbg=238 ctermfg=237
+]])
 
 -- FIXME
 if (vim.bo.filetype == 'cpp') or (vim.bo.filetype == 'cpp') or (vim.bo.filetype == 'python') then
@@ -76,56 +78,71 @@ vim.cmd('set tabstop=2')
 vim.cmd('set expandtab')
 
 -- keybinds
-vim.cmd('let mapleader = "\\<space>"')
+vim.g.mapleader = " "
 
-vim.cmd('nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>')
-vim.cmd('nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>')
-vim.cmd('nnoremap <leader>pu :PlugUpdate<cr>')
-vim.cmd('nnoremap <leader>tt :8Term<cr>')
-vim.cmd('nnoremap <leader>w  :w<cr>')
-vim.cmd('nnoremap <leader>bc :Bclose<cr>')
-vim.cmd('nnoremap <leader>nh :noh<cr>')
-vim.cmd('nnoremap <leader>vs :vsplit<cr>')
-vim.cmd('nnoremap <leader>s  :split<cr>')
-vim.cmd('nnoremap <leader>tn :tabnext<cr>')
-vim.cmd('nnoremap <leader>tp :tabprevious<cr>')
-vim.cmd('nnoremap <leader>tc :tabclose<cr>')
-vim.cmd('nnoremap <leader>m  :Man<cr>')
-vim.cmd('nnoremap <leader>o  o<Esc>')
-vim.cmd('nnoremap <leader>O  O<Esc>')
+vim.cmd([[
+  nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
+  nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
+  nnoremap <leader>pu :PlugUpdate<cr>
+  nnoremap <leader>tt :8Term<cr>
+  nnoremap <leader>w  :w<cr>
+  nnoremap <leader>bc :Bclose<cr>
+  nnoremap <leader>nh :noh<cr>
+  nnoremap <leader>vs :vsplit<cr>
+  nnoremap <leader>s  :split<cr>
+  nnoremap <leader>tn :tabnext<cr>
+  nnoremap <leader>tp :tabprevious<cr>
+  nnoremap <leader>tc :tabclose<cr>
+  nnoremap <leader>m  :Man<cr>
+  nnoremap <leader>o  o<Esc>
+  nnoremap <leader>O  O<Esc>
+]])
 
 -- telescope hotkeys
-vim.cmd('nnoremap <c-p> :Telescope find_files<cr>')
-vim.cmd('nnoremap <c-f> :Telescope live_grep<cr>')
-vim.cmd('nnoremap <c-e> :Telescope command_history<cr>')
-vim.cmd('nnoremap <c-b> :Telescope buffers<cr>')
+vim.cmd([[
+  nnoremap <c-p> :Telescope find_files<cr>
+  nnoremap <c-f> :Telescope live_grep<cr>
+  nnoremap <c-e> :Telescope command_history<cr>
+  nnoremap <c-b> :Telescope buffers<cr>
+]])
 
 -- navigation hotkeys
-vim.cmd('nnoremap <leader>l <c-w><Right>')
-vim.cmd('nnoremap <leader>h <c-w><Left>')
-vim.cmd('nnoremap <leader>k <c-w><Up>')
-vim.cmd('nnoremap <leader>j <c-w><Down>')
+vim.cmd([[
+  nnoremap <leader>l <c-w><Right>
+  nnoremap <leader>h <c-w><Left>
+  nnoremap <leader>k <c-w><Up>
+  nnoremap <leader>j <c-w><Down>
+]])
 
 -- disabling the arrow keys
-vim.cmd('noremap <Up>    <Nop>')
-vim.cmd('noremap <Down>  <Nop>')
-vim.cmd('noremap <Left>  <Nop>')
-vim.cmd('noremap <Right> <Nop>')
+vim.cmd([[
+  noremap <Up>    <Nop>
+  noremap <Down>  <Nop>
+  noremap <Left>  <Nop>
+  noremap <Right> <Nop>
+]])
 
 -- git hotkeys
-vim.cmd('nnoremap <leader>gs  :Telescope git_status<cr>')
-vim.cmd('nnoremap <leader>gc  :Git commit<cr>')
-vim.cmd('nnoremap <leader>gca :Git commit --amend<cr>')
-vim.cmd('nnoremap <leader>gh  :diffget //2<cr>')
-vim.cmd('nnoremap <leader>gl  :diffget //3<cr>')
+vim.cmd([[
+  nnoremap <leader>gs  :Telescope git_status<cr>
+  nnoremap <leader>gc  :Git commit<cr>
+  nnoremap <leader>gca :Git commit --amend<cr>
+  nnoremap <leader>gh  :diffget //2<cr>
+  nnoremap <leader>gl  :diffget //3<cr>
+]])
 
-vim.cmd('nnoremap <a-;> <Esc>')
-vim.cmd('cnoremap <a-;> <Esc>')
-vim.cmd('tnoremap <a-;> <Esc>')
-vim.cmd('vnoremap <a-;> <Esc>')
-vim.cmd('snoremap <a-;> <Esc>')
+-- other
+vim.cmd([[
+  nnoremap <a-;> <Esc>
+  cnoremap <a-;> <Esc>
+  tnoremap <a-;> <Esc>
+  vnoremap <a-;> <Esc>
+  snoremap <a-;> <Esc>
+]])
 
 -- cmds
-vim.cmd('autocmd FileType text,markdown,tex set textwidth=99')
-vim.cmd('autocmd BufWritePre * %s/\\s\\+$//e')
-vim.cmd('autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif')
+vim.cmd([[
+  autocmd FileType text,markdown,tex set textwidth=99
+  autocmd BufWritePre * %s/\\s\\+$//e
+  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+]])
