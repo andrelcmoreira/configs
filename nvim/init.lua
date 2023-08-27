@@ -96,12 +96,10 @@ vim.cmd([[
 ]])
 
 -- telescope hotkeys
-vim.cmd([[
-  nnoremap <c-p> :Telescope find_files<cr>
-  nnoremap <c-f> :Telescope live_grep<cr>
-  nnoremap <c-e> :Telescope command_history<cr>
-  nnoremap <c-b> :Telescope buffers<cr>
-]])
+vim.keymap.set('n', '<c-p>', ':Telescope find_files<cr>')
+vim.keymap.set('n', '<c-f>', ':Telescope live_grep<cr>')
+vim.keymap.set('n', '<c-e>', ':Telescope command_history<cr>')
+vim.keymap.set('n', '<c-b>', ':Telescope buffers<cr>')
 
 -- buffer navigation hotkeys
 vim.keymap.set('n', '<leader>l', '<c-w><Right>')
