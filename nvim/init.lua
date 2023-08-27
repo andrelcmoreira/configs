@@ -75,25 +75,20 @@ vim.bo.tabstop = 2
 vim.cmd('set ai')
 vim.cmd('set expandtab')
 
--- keybinds
+-- misc hotkeys
 vim.g.mapleader = " "
 
-vim.cmd([[
-  nnoremap <leader>ev :vsplit ~/.config/nvim/init.lua<cr>
-  nnoremap <leader>sv :source ~/.config/nvim/init.lua<cr>
-  nnoremap <leader>pu :PlugUpdate<cr>
-  nnoremap <leader>w  :w<cr>
-  nnoremap <leader>bc :bdelete<cr>
-  nnoremap <leader>t  :terminal<cr>
-  nnoremap <leader>nh :noh<cr>
-  nnoremap <leader>vs :vsplit<cr>
-  nnoremap <leader>s  :split<cr>
-  nnoremap <leader>tn :tabnext<cr>
-  nnoremap <leader>tp :tabprevious<cr>
-  nnoremap <leader>tc :tabclose<cr>
-  nnoremap <leader>o  o<Esc>
-  nnoremap <leader>O  O<Esc>
-]])
+vim.keymap.set('n', '<leader>ev', ':vsplit ~/.config/nvim/init.lua<cr>')
+vim.keymap.set('n', '<leader>sv', ':source ~/.config/nvim/init.lua<cr>')
+vim.keymap.set('n', '<leader>pu', ':PlugUpdate<cr>')
+vim.keymap.set('n', '<leader>w ', ':w<cr>')
+vim.keymap.set('n', '<leader>bc', ':bdelete<cr>')
+vim.keymap.set('n', '<leader>t ', ':terminal<cr>')
+vim.keymap.set('n', '<leader>nh', ':noh<cr>')
+vim.keymap.set('n', '<leader>vs', ':vsplit<cr>')
+vim.keymap.set('n', '<leader>s ', ':split<cr>')
+vim.keymap.set('n', '<leader>o ', 'o<Esc>')
+vim.keymap.set('n', '<leader>O ', 'O<Esc>')
 
 -- telescope hotkeys
 vim.keymap.set('n', '<c-p>', ':Telescope find_files<cr>')
