@@ -112,12 +112,10 @@ vim.cmd([[
 ]])
 
 -- disabling the arrow keys
-vim.cmd([[
-  noremap <Up>    <Nop>
-  noremap <Down>  <Nop>
-  noremap <Left>  <Nop>
-  noremap <Right> <Nop>
-]])
+vim.keymap.set('n', '<Up>', '<Nop>', { noremap = true })
+vim.keymap.set('n', '<Down>', '<Nop>', { noremap = true })
+vim.keymap.set('n', '<Left>', '<Nop>', { noremap = true })
+vim.keymap.set('n', '<Right>', '<Nop>', { noremap = true })
 
 -- git hotkeys
 vim.cmd([[
