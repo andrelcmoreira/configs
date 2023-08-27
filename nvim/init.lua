@@ -9,7 +9,6 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'iamcco/markdown-preview.nvim' -- FIXME
   Plug 'tpope/vim-surround'
-  Plug 'rbgrouleff/bclose.vim'
   Plug 'francoiscabrol/ranger.vim'
   Plug 'dense-analysis/ale'
   Plug 'SirVer/ultisnips'
@@ -20,7 +19,6 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'nvim-lua/plenary.nvim'
   Plug 'mhinz/vim-startify'
   Plug ('neoclide/coc.nvim', { tag = 'v0.0.81' })
-  Plug 'easymotion/vim-easymotion'
   Plug ('nvim-telescope/telescope.nvim', { tag = '0.1.1' })
 vim.call('plug#end')
 
@@ -35,11 +33,11 @@ vim.g.airline_theme = "zenburn"
 vim.g.airline_symbols_ascii = 1
 
 -- appearence
+vim.cmd('colorscheme zenburn')
 vim.wo.relativenumber = true
 vim.wo.number = true
 vim.wo.cursorline = true
 vim.o.background = 'dark'
-vim.cmd('colorscheme zenburn')
 
 vim.cmd([[
   highlight cursorline cterm=none term=none ctermbg=238
@@ -72,9 +70,9 @@ vim.cmd('filetype detect')
 vim.cmd('set showmatch')
 
 -- indentation
+vim.bo.shiftwidth = 2
+vim.bo.tabstop = 2
 vim.cmd('set ai')
-vim.cmd('set shiftwidth=2')
-vim.cmd('set tabstop=2')
 vim.cmd('set expandtab')
 
 -- keybinds
@@ -85,7 +83,8 @@ vim.cmd([[
   nnoremap <leader>sv :source ~/.config/nvim/init.lua<cr>
   nnoremap <leader>pu :PlugUpdate<cr>
   nnoremap <leader>w  :w<cr>
-  nnoremap <leader>bc :Bclose<cr>
+  nnoremap <leader>bc :bdelete<cr>
+  nnoremap <leader>t  :terminal<cr>
   nnoremap <leader>nh :noh<cr>
   nnoremap <leader>vs :vsplit<cr>
   nnoremap <leader>s  :split<cr>
