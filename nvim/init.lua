@@ -103,13 +103,11 @@ vim.cmd([[
   nnoremap <c-b> :Telescope buffers<cr>
 ]])
 
--- navigation hotkeys
-vim.cmd([[
-  nnoremap <leader>l <c-w><Right>
-  nnoremap <leader>h <c-w><Left>
-  nnoremap <leader>k <c-w><Up>
-  nnoremap <leader>j <c-w><Down>
-]])
+-- buffer navigation hotkeys
+vim.keymap.set('n', '<leader>l', '<c-w><Right>')
+vim.keymap.set('n', '<leader>h', '<c-w><Left>')
+vim.keymap.set('n', '<leader>k', '<c-w><Up>')
+vim.keymap.set('n', '<leader>j', '<c-w><Down>')
 
 -- disabling the arrow keys
 vim.keymap.set('n', '<Up>', '<Nop>')
