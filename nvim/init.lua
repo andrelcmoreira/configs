@@ -112,19 +112,17 @@ vim.cmd([[
 ]])
 
 -- disabling the arrow keys
-vim.keymap.set('n', '<Up>', '<Nop>', { noremap = true })
-vim.keymap.set('n', '<Down>', '<Nop>', { noremap = true })
-vim.keymap.set('n', '<Left>', '<Nop>', { noremap = true })
-vim.keymap.set('n', '<Right>', '<Nop>', { noremap = true })
+vim.keymap.set('n', '<Up>', '<Nop>')
+vim.keymap.set('n', '<Down>', '<Nop>')
+vim.keymap.set('n', '<Left>', '<Nop>')
+vim.keymap.set('n', '<Right>', '<Nop>')
 
 -- git hotkeys
-vim.cmd([[
-  nnoremap <leader>gs  :Telescope git_status<cr>
-  nnoremap <leader>gc  :Git commit<cr>
-  nnoremap <leader>gca :Git commit --amend<cr>
-  nnoremap <leader>gh  :diffget //2<cr>
-  nnoremap <leader>gl  :diffget //3<cr>
-]])
+vim.keymap.set('n', '<leader>gs', ':Telescope git_status<cr>')
+vim.keymap.set('n', '<leader>gc', ':Git commit<cr>')
+vim.keymap.set('n', '<leader>gca', ':Git commit --amend<cr>')
+vim.keymap.set('n', '<leader>gh', ':diffget //2<cr>')
+vim.keymap.set('n', '<leader>gl', ':diffget //3<cr>')
 
 -- other
 vim.cmd([[
