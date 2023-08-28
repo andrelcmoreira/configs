@@ -123,8 +123,7 @@ vim.keymap.set('v', '<a-;>', '<Esc>')
 vim.keymap.set('s', '<a-;>', '<Esc>')
 
 -- cmds
-vim.cmd([[
-  autocmd FileType text,markdown,tex set textwidth=99
-  autocmd BufWritePre * %s/\\s\\+$//e
-  autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-]])
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = '',
+  command = '%s/\\s\\+$//e'
+})
