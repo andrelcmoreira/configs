@@ -81,14 +81,14 @@ vim.g.mapleader = " "
 vim.keymap.set('n', '<leader>ev', ':vsplit ~/.config/nvim/init.lua<cr>')
 vim.keymap.set('n', '<leader>sv', ':source ~/.config/nvim/init.lua<cr>')
 vim.keymap.set('n', '<leader>pu', ':PlugUpdate<cr>')
-vim.keymap.set('n', '<leader>w ', ':w<cr>')
+vim.keymap.set('n', '<leader>w', ':w<cr>')
 vim.keymap.set('n', '<leader>bc', ':bdelete<cr>')
-vim.keymap.set('n', '<leader>t ', ':terminal<cr>')
+vim.keymap.set('n', '<leader>t', ':terminal<cr>')
 vim.keymap.set('n', '<leader>nh', ':noh<cr>')
 vim.keymap.set('n', '<leader>vs', ':vsplit<cr>')
-vim.keymap.set('n', '<leader>s ', ':split<cr>')
-vim.keymap.set('n', '<leader>o ', 'o<Esc>')
-vim.keymap.set('n', '<leader>O ', 'O<Esc>')
+vim.keymap.set('n', '<leader>s', ':split<cr>')
+vim.keymap.set('n', '<leader>o', 'o<Esc>')
+vim.keymap.set('n', '<leader>O', 'O<Esc>')
 
 -- telescope hotkeys
 vim.keymap.set('n', '<c-p>', ':Telescope find_files<cr>')
@@ -116,13 +116,11 @@ vim.keymap.set('n', '<leader>gh', ':diffget //2<cr>')
 vim.keymap.set('n', '<leader>gl', ':diffget //3<cr>')
 
 -- other
-vim.cmd([[
-  nnoremap <a-;> <Esc>
-  cnoremap <a-;> <Esc>
-  tnoremap <a-;> <Esc>
-  vnoremap <a-;> <Esc>
-  snoremap <a-;> <Esc>
-]])
+vim.keymap.set('n', '<a-;>', '<Esc>')
+vim.keymap.set('c', '<a-;>', '<Esc>')
+vim.keymap.set('t', '<a-;>', '<Esc>')
+vim.keymap.set('v', '<a-;>', '<Esc>')
+vim.keymap.set('s', '<a-;>', '<Esc>')
 
 -- cmds
 vim.cmd([[
