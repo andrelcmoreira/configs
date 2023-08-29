@@ -19,7 +19,6 @@ call plug#begin()
     Plug 'mhinz/vim-startify'
     "Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'neoclide/coc.nvim', {'tag': 'v0.0.81'}
-    Plug 'easymotion/vim-easymotion'
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 call plug#end()
 " }}}
@@ -97,7 +96,6 @@ nnoremap <leader>tc :tabclose<cr>
 nnoremap <leader>m  :Man<cr>
 nnoremap <leader>o  o<Esc>
 nnoremap <leader>O  O<Esc>
-nnoremap <leader>cf :!clang-format -i --style=Google %<Esc><cr>:e<Esc>
 
 " telescope hotkeys
 nnoremap <c-p> :Telescope find_files<cr>
@@ -132,9 +130,7 @@ snoremap <a-;> <Esc>
 " }}}
 
 " Cmds {{{
-autocmd FileType text,markdown,tex set textwidth=99
 autocmd BufWritePre * %s/\s\+$//e
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 " }}}
 
 " vim:foldmethod=marker:foldlevel=0
