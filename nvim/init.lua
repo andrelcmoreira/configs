@@ -32,6 +32,14 @@ vim.g.coc_disable_startup_warning = 1
 vim.g.airline_theme = "zenburn"
 vim.g.airline_symbols_ascii = 1
 
+require('telescope').setup{
+  defaults = {
+    file_ignore_patterns = {
+      "tags"
+    }
+  }
+}
+
 -- appearence
 vim.cmd('colorscheme zenburn')
 vim.wo.relativenumber = true
