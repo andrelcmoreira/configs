@@ -13,7 +13,6 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'dense-analysis/ale'
   Plug 'SirVer/ultisnips'
   Plug 'carvalhudo/vim-snippets'
-  Plug 'wincent/ferret'
   Plug 'mg979/vim-visual-multi'
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
