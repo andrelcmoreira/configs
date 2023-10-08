@@ -1,0 +1,8 @@
+session_name: void-packages
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/thirdy-party/void-packages
+  panes:
+    - ./check-updates
