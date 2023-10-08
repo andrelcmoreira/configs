@@ -4,3 +4,5 @@ windows:
   layout: tiled
   shell_command_before:
     - cd ~/dev/projects/configs
+  panes:
+    - clear

@@ -4,3 +4,5 @@ windows:
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/rust-learning
+  panes:
+    - clear

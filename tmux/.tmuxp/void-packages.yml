@@ -5,4 +5,5 @@ windows:
   shell_command_before:
     - cd $PROJECTS/thirdy-party/void-packages
   panes:
+    - clear
     - ./check-updates
