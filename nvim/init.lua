@@ -12,13 +12,13 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'francoiscabrol/ranger.vim'
   Plug 'dense-analysis/ale'
   Plug 'SirVer/ultisnips'
-  Plug 'carvalhudo/vim-snippets'
+  Plug 'honza/vim-snippets'
   Plug 'mg979/vim-visual-multi'
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'mhinz/vim-startify'
   Plug ('neoclide/coc.nvim', { tag = 'v0.0.81' })
-  Plug ('nvim-telescope/telescope.nvim', { tag = '0.1.1' })
+  Plug 'nvim-telescope/telescope.nvim'
 vim.call('plug#end')
 
 -- plugin config
