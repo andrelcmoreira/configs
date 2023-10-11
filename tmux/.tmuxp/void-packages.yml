@@ -4,6 +4,6 @@ windows:
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/thirdy-party/void-packages
-  panes:
     - clear
+  panes:
     - ./check-updates
