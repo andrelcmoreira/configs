@@ -3,13 +3,13 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/espotifai/espotifai-api
+    - cd $PROJECTS/espotifai/espotifai-api
   panes:
     - nv lib/src/api.cc
 
 - window_name: test
   layout: main-horizontal
   shell_command_before:
-    - cd ~/dev/projects/espotifai/espotifai-api/
+    - cd $PROJECTS/espotifai/espotifai-api/
   panes:
     - build/tests/unit/espotifai_api_tests

@@ -3,5 +3,5 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/rsh
+    - cd $PROJECTS/rsh
     - nv rsh_client.c rsh_server.c

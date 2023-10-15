@@ -3,14 +3,14 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/kermma
+    - cd $PROJECTS/kermma
   panes:
     - nv kermma_main.c
 
 - window_name: test
   layout: main-horizontal
   shell_command_before:
-    - cd ~/dev/projects/kermma/vm
+    - cd $PROJECTS/kermma/vm
   panes:
     - shell_command:
         - vagrant up

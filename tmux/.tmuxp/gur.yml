@@ -3,12 +3,12 @@ windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd ~/dev/projects/gur
+    - cd $PROJECTS/gur
   panes:
     - nv gur/gur.py
 
 - window_name: test
   layout: main-horizontal
   shell_command_before:
-    - cd ~/dev/projects/gur
+    - cd $PROJECTS/gur
     - /bin/sh scripts/run_tests.sh

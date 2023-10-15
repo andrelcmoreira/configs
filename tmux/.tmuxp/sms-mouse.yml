@@ -1,0 +1,15 @@
+session_name: sms-mouse
+windows:
+- window_name: client
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/sms-mouse
+  panes:
+    - nv src/client/sms_mouse_client.c
+
+- window_name: server
+  layout: main-horizontal
+  shell_command_before:
+    - cd $PROJECTS/sms-mouse
+  panes:
+    - nv src/server/sms_mouse_server.py
