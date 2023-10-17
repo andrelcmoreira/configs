@@ -33,7 +33,7 @@ bindsym $mod+d exec "rofi -modi run,drun -show drun -show-icons -display-drun 'C
 bindsym $mod+u exec "qsudo /usr/bin/usb-rofi -u"
 
 # launch tmux section selector script
-bindsym $mod+Shift+d exec $SCRIPTS/tmux_session_selector
+bindsym $mod+Shift+d exec $SCRIPTS/tmux-session-selector
 
 # launche workspace selector
 bindsym $mod+Shift+w exec /bin/sh $SCRIPTS/workspace-selector
