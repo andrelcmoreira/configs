@@ -1,7 +1,0 @@
-#!/bin/sh
-
-option=$(printf " Poweroff\n Reboot\n Lock" | rofi -dmenu -p "Choose the action" -width 22 -line-padding 3 -lines 3)
-
-[ "$option" = " Poweroff" ] && sudo shutdown -h now
-[ "$option" = " Reboot" ] && sudo shutdown -r now
-[ "$option" = " Lock" ] && betterlockscreen -l blur 3
