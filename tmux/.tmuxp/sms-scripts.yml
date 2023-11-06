@@ -1,9 +1,9 @@
-session_name: sms-rom-reader
+session_name: sms-scripts
 windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd $PROJECTS/sms-rom-reader
+    - cd $PROJECTS/sms-scripts
   panes:
-    - nv sms_rom_reader.py
+    - nv *.py
     - ./test
