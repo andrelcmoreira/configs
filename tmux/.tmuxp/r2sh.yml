@@ -1,0 +1,17 @@
+session_name: r2sh
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/r2sh
+    - nv src/*.rs
+
+- window_name: test
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/r2sh
+  panes:
+    - shell_command:
+      - target/debug/r2sh-server -p 6666
+    - shell_command:
+      - target/debug/r2sh-client -p 6666 -s 127.0.0.1
