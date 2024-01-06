@@ -1,0 +1,15 @@
+session_name: core-utils
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/core-utils
+  panes:
+    - nv src/*.rs
+
+- window_name: test
+  layout: main-horizontal
+  shell_command_before:
+    - cd $PROJECTS/core-utils
+  panes:
+    - cargo build
