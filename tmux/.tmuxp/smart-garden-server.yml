@@ -5,13 +5,19 @@ windows:
   shell_command_before:
     - cd $PROJECTS/smart-garden-server
   panes:
-    - nv run.py
-    - ~/.local/bin/nose2 -c tests/nose.cfg
+    - nv app/run.py
 
-- window_name: test
+- window_name: unit-test
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/smart-garden-server
   panes:
-    - SECRET_KEY=xablau python3 run.py
+    - nose2 -c tests/nose.cfg
+
+- window_name: app-test
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/smart-garden-server
+  panes:
+    - docker-compose up
     - cd scripts/requests
