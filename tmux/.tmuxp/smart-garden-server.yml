@@ -19,5 +19,5 @@ windows:
   shell_command_before:
     - cd $PROJECTS/smart-garden-server
   panes:
-    - docker-compose up
+    - docker-compose --env-file .env.dbg up
     - cd scripts/requests
