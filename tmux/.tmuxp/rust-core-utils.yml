@@ -5,7 +5,7 @@ windows:
   shell_command_before:
     - cd $PROJECTS/core-utils
   panes:
-    - nv cat/src/main.rs
+    - $VISUAL cat/src/main.rs
 
 - window_name: test
   layout: main-horizontal

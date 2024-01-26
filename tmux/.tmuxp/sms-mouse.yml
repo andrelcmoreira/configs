@@ -5,11 +5,11 @@ windows:
   shell_command_before:
     - cd $PROJECTS/sms-mouse
   panes:
-    - nv src/client/sms_mouse_client.c
+    - $VISUAL src/client/sms_mouse_client.c
 
 - window_name: server
   layout: main-horizontal
   shell_command_before:
     - cd $PROJECTS/sms-mouse
   panes:
-    - nv src/server/sms_mouse_server.py
+    - $VISUAL src/server/sms_mouse_server.py

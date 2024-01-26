@@ -4,4 +4,4 @@ windows:
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/rsh
-    - nv rsh_client.c rsh_server.c
+    - $VISUAL rsh_client.c rsh_server.c

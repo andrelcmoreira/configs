@@ -5,5 +5,5 @@ windows:
   shell_command_before:
     - cd $PROJECTS/sms-scripts
   panes:
-    - nv *.py
+    - $VISUAL *.py
     - ./test

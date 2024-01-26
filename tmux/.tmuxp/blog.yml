@@ -5,4 +5,4 @@ windows:
   shell_command_before:
     - cd $PROJECTS/carvalhudo.github.io/articles
   panes:
-    - nv kunit-pt1-ptbr.md -c MarkdownPreview
+    - $VISUAL kunit-pt1-ptbr.md -c MarkdownPreview

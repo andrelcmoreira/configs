@@ -1,0 +1,15 @@
+session_name: host-provisioner
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/host-provisioner
+  panes:
+    - $VISUAL provision_host.yml
+
+- window_name: test
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/host-provisioner
+  panes:
+    - ansible-playbook -i hosts provision_host.yml -K

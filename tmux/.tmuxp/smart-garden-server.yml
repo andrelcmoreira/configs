@@ -5,7 +5,7 @@ windows:
   shell_command_before:
     - cd $PROJECTS/smart-garden-server
   panes:
-    - nv app/run.py
+    - $VISUAL app/run.py
 
 - window_name: unit-test
   layout: tiled

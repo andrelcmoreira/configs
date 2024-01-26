@@ -4,7 +4,7 @@ windows:
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/r2sh
-    - nv src/*.rs
+    - $VISUAL src/*.rs
 
 - window_name: test
   layout: tiled
