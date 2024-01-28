@@ -11,6 +11,7 @@ windows:
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/smart-garden-server
+    - source venv/bin/activate
   panes:
     - nose2 -c tests/nose.cfg
 
