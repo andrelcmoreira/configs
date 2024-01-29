@@ -8,8 +8,9 @@ windows:
     - $VISUAL cat/src/main.rs
 
 - window_name: test
-  layout: main-horizontal
+  layout: tiled
   shell_command_before:
     - cd $PROJECTS/core-utils
   panes:
+    - cargo test
     - cargo build
