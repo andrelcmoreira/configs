@@ -1,9 +1,9 @@
-session_name: sms-scripts
+session_name: sms-tools
 windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd $PROJECTS/sms-scripts
+    - cd $PROJECTS/sms-tools
   panes:
-    - $VISUAL tools/*.py
+    - $VISUAL smstools/*.py
     - ./test
