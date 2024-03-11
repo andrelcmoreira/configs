@@ -19,6 +19,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'mhinz/vim-startify'
   Plug ('neoclide/coc.nvim', { tag = 'v0.0.81' })
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'rbgrouleff/bclose.vim'
 vim.call('plug#end')
 
 -- plugin config
