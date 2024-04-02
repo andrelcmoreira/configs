@@ -20,6 +20,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug ('neoclide/coc.nvim', { tag = 'v0.0.81' })
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'rbgrouleff/bclose.vim'
+  Plug 'ThePrimeagen/git-worktree.nvim'
 vim.call('plug#end')
 
 -- plugin config
@@ -39,6 +40,8 @@ require('telescope').setup{
     }
   }
 }
+
+require("telescope").load_extension("git_worktree")
 
 -- appearence
 vim.cmd('colorscheme zenburn')
