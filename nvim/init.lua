@@ -106,6 +106,7 @@ vim.keymap.set('n', '<c-p>', ':Telescope find_files<cr>')
 vim.keymap.set('n', '<c-f>', ':Telescope live_grep<cr>')
 vim.keymap.set('n', '<c-e>', ':Telescope command_history<cr>')
 vim.keymap.set('n', '<c-b>', ':Telescope buffers<cr>')
+vim.keymap.set('n', '<c-g>', ':Telescope git_worktree<cr>')
 
 -- buffer navigation hotkeys
 vim.keymap.set('n', '<leader>l', '<c-w><Right>')
