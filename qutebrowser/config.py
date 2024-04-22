@@ -421,6 +421,8 @@ c.fonts.statusbar = '12pt Cascadia Code'
 # Type: QtFont
 #c.fonts.tabs = '12pt Cascadia Code'
 
+c.zoom.default = '110%'
+
 # Bindings for normal mode
 config.bind('<return>', 'follow-selected')
 config.bind('B', ':buffer')
