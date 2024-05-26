@@ -20,7 +20,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug ('neoclide/coc.nvim', { tag = 'v0.0.81' })
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'rbgrouleff/bclose.vim'
-  Plug 'ThePrimeagen/git-worktree.nvim'
+  Plug 'bradsherman/git-worktree.nvim'
 vim.call('plug#end')
 
 -- plugin config
