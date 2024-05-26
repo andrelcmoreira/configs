@@ -6,4 +6,4 @@ windows:
     - cd $PROJECTS/thirdy-party/void-packages
     - clear
   panes:
-    - ./check-updates
+    - git fetch --all && git reset --hard upstream/master && ./check-updates
