@@ -7,7 +7,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'vim-airline/vim-airline-themes'
   Plug 'airblade/vim-gitgutter'
   Plug 'tpope/vim-fugitive'
-  Plug 'iamcco/markdown-preview.nvim' -- FIXME
+  Plug 'iamcco/markdown-preview.nvim'
   Plug 'tpope/vim-surround'
   Plug 'francoiscabrol/ranger.vim'
   Plug 'dense-analysis/ale'
@@ -52,21 +52,22 @@ vim.o.background = 'dark'
 
 vim.cmd([[
   highlight cursorline cterm=none term=none ctermbg=238
-  highlight CursorLineNR cterm=none ctermbg=238
-  highlight LineNr cterm=none ctermfg=grey ctermbg=238
-  highlight ALEErrorSign ctermbg=238
-  highlight ALEWarningSign ctermbg=238
-  highlight SignColumn ctermbg=238
-  highlight GitGutterAdd ctermfg=green ctermbg=238
-  highlight GitGutterDelete ctermfg=red ctermbg=238
-  highlight GitGutterChange ctermfg=grey ctermbg=238
+  highlight CursorLineNR cterm=none ctermbg=238 guibg=#3f3f3f
+  highlight LineNr cterm=none ctermfg=grey ctermbg=238 guibg=#3f3f3f
+  highlight ALEErrorSign ctermbg=238 guibg=#3f3f3f
+  highlight ALEWarningSign ctermbg=238 guibg=#3f3f3f
+  highlight SignColumn ctermbg=238 guibg=#3f3f3f
+  highlight GitGutterAdd ctermfg=green ctermbg=238 guibg=#3f3f3f
+  highlight GitGutterDelete ctermfg=red ctermbg=238 guibg=#3f3f3f
+  highlight GitGutterChange ctermfg=grey ctermbg=238 guibg=#3f3f3f
   highlight VertSplit ctermbg=238 ctermfg=237
+  highlight WinSeparator guifg=#3f3f3f
 ]])
 
 -- FIXME
 --if (vim.bo.filetype == 'c') or (vim.bo.filetype == 'cpp') or (vim.bo.filetype == 'python') then
 vim.cmd('let &colorcolumn=join(range(81,999),",")')
-vim.cmd('highlight ColorColumn ctermbg=238 guibg=lightgrey')
+vim.cmd('highlight ColorColumn ctermbg=238 guibg=#3f3f3f')
 --end
 
 -- misc
