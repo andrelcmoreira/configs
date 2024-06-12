@@ -1,0 +1,8 @@
+session_name: elifoot98-tools
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/elifoot98-tools
+  panes:
+    - $VISUAL equipa_viewer.py
