@@ -5,4 +5,4 @@ windows:
   shell_command_before:
     - cd $PROJECTS/elifoot98-tools
   panes:
-    - $VISUAL equipa_viewer.py
+    - $VISUAL elf98/equipa_viewer.py
