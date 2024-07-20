@@ -1,0 +1,8 @@
+session_name: elf98
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/elf98
+  panes:
+    - $VISUAL elf98/elf98.py
