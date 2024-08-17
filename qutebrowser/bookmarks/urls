@@ -214,8 +214,6 @@ https://github.com/xfixium/SMSEditor xfixium/SMSEditor: Sega Master System ROM r
 http://jmimu.free.fr/mastertileconverter/ Master Tile Converter
 https://www.chibiakumas.com/z80/MasterSystemGameGear.php?noui=1 Z80 Assembly programming for the Sega Master System and the Game Gear!
 https://www.smspower.org/meka/ MEKA Homepage
-https://www.smspower.org/Development/SDSC SDSC - Development - SMS Power!
-https://www.smspower.org/Development/SDSCHeader SDSC Header - Development - SMS Power!
 https://www.postman.com/explore/football-apis Football APIs | Postman API Network
 https://docs.rs/rstest/latest/rstest/#:~:text=In%20rstest%20a%20fixture%20is,fixtures%20at%20the%20same%20time. rstest - Rust
 https://docs.rs/rstest/latest/rstest/attr.fixture.html fixture in rstest - Rust
@@ -227,3 +225,78 @@ https://www.reddit.com/r/linux/comments/18dqkos/devils_advocate_paid_flatpaks_on
 https://interrupt.memfault.com/blog/connectivity-metrics Best Practices for Monitoring Device Connectivity | Interrupt
 https://www.reddit.com/r/rust/comments/1at3r6d/why_isnt_rust_faster_than_c_given_it_can_leverage/ Why ISN'T Rust faster than C? (given it can leverage more explicit information at compile time) : r/rust
 https://www.smspower.org/Development/ROMHeader ROM Header - Development - SMS Power!
+https://0x00sec.org/t/writing-a-self-mutating-malware/40213#post_1 Writing a Self-Mutating Malware - Malware - 0x00sec - The Home of the Hacker
+https://docs.conan.io/2/tutorial/creating_packages.html Creating packages — conan 2.3.0 documentation
+https://www.copetti.org/writings/consoles/neogeo/ Neo Geo Architecture | A Practical Analysis
+https://www.zenrows.com/blog/web-crawler-python#build-your-first-python-web-crawler Web Crawler in Python: Step-by-Step Tutorial 2024 - ZenRows
+https://www.theautopian.com/gms-futuristic-80s-digital-displays-are-dying-but-this-man-is-fighting-to-keep-them-alive/ GM’s Futuristic ’80s Digital Displays Are Dying But This Man Is Fighting To Keep Them Alive - The Autopian
+https://www.theseus-os.com/Theseus/book/design/design.html Design and Structure of Theseus - The Theseus OS Book
+https://www.thegamer.com/online-multiplayer-sega-dreamcast-still-dreampi/ Meet The People Keeping The Dreamcast Alive
+https://github.com/systemd/systemd/blob/main/docs/ARCHITECTURE.md systemd/docs/ARCHITECTURE.md at main · systemd/systemd
+https://opensource.com/article/20/4/systemd Learning to love systemd | Opensource.com
+https://www.oreilly.com/openbook/opensources/book/kirkmck.html Open Sources: Voices from the Open Source Revolution
+https://lowendbox.com/blog/lets-try-bsd-part-1-of-7-introduction-freebsd-openbsd-netbsd-dragonflybsd/ Let's Try BSD, Part 1 of 7: Introduction (FreeBSD, OpenBSD, NetBSD, DragonFlyBSD) - LowEndBox
+https://voidlinux.org/news/2013/12/XBPS-API-example.html XBPS API example: list pkgs by maintainer in repos
+https://voidlinux.org/news/2014/04/Full-multilib-support.html Multilib support becomes a reality
+https://voidlinux.org/news/2017/12/advent-gcal.html The Advent of Void: Day 1: gcal
+https://voidlinux.org/news/2017/12/advent-taskwarrior.html The Advent of Void: Day 2: taskwarrior and friends
+https://voidlinux.org/news/2017/12/advent-ministat.html The Advent of Void: Day 3: ministat
+https://voidlinux.org/news/2017/12/advent-containers.html The Advent of Void: Day 4: containers
+https://voidlinux.org/news/2017/12/advent-perl-Math-Prime-Util.html The Advent of Void: Day 5: perl-Math-Prime-Util
+https://voidlinux.org/news/2017/12/advent-jq.html The Advent of Void: Day 6: jq
+https://voidlinux.org/news/2017/12/advent-mosh.html The Advent of Void: Day 7: mosh
+https://voidlinux.org/news/2017/12/advent-dtach.html The Advent of Void: Day 8: dtach
+https://voidlinux.org/news/2017/12/advent-zutils.html The Advent of Void: Day 9: zutils
+https://voidlinux.org/news/2017/12/advent-dvtm.html The Advent of Void: Day 10: dvtm
+https://voidlinux.org/news/2017/12/advent-fatrace.html The Advent of Void: Day 11: fatrace
+https://voidlinux.org/news/2017/12/advent-xpra.html The Advent of Void: Day 12: xpra
+https://voidlinux.org/news/2017/12/advent-ncdu.html The Advent of Void: Day 13: ncdu
+https://voidlinux.org/news/2017/12/advent-PAmip.html The Advent of Void: Day 14: PAmix and pulsemixer
+https://voidlinux.org/news/2017/12/advent-an.html The Advent of Void: Day 15: an
+https://voidlinux.org/news/2017/12/advent-pv.html The Advent of Void: Day 16: pv
+https://voidlinux.org/news/2017/12/advent-dstat.html The Advent of Void: Day 17: dstat
+https://voidlinux.org/news/2017/12/advent-mblaze.html The Advent of Void: Day 18: mblaze
+https://voidlinux.org/news/2017/12/advent-mblaze-part-2.html The Advent of Void: Day 19: mblaze part 2
+https://voidlinux.org/news/2017/12/shmux.html The Advent of Void: Day 20: shmux
+https://voidlinux.org/news/2017/12/neatvi.html The Advent of Void: Day 21: neatvi
+https://voidlinux.org/news/2017/12/advent-qdirstat.html The Advent of Void: Day 22: QDirStat
+https://voidlinux.org/news/2017/12/advent-ledger.html The Advent of Void: Day 23: ledger
+https://voidlinux.org/news/2017/12/snooze.html The Advent of Void: Day 24: snooze
+https://voidlinux.org/news/2017/12/ponysay.html The Advent of Void: Day 25: ponysay
+https://voidlinux.org/news/2018/12/advent-tcc.html The Advent of Void: Day 1: tcc
+https://voidlinux.org/news/2018/12/advent-sshfs.html The Advent of Void: Day 2: sshfs
+https://voidlinux.org/news/2018/12/advent-ncdu.html The Advent of Void: Day 3: ncdu
+https://voidlinux.org/news/2018/12/advent-pwgen.html The Advent of Void: Day 4: pwgen
+https://voidlinux.org/news/2018/12/advent-surf.html The Advent of Void: Day 5: surf
+https://voidlinux.org/news/2018/12/advent-xlunch.html The Advent of Void: Day 6: xlunch
+https://voidlinux.org/news/2018/12/advent-scrot.html The Advent of Void: Day 7: scrot
+https://voidlinux.org/news/2018/12/advent-ipcalc.html The Advent of Void: Day 8: ipcalc
+https://voidlinux.org/news/2018/12/advent-mdbook.html The Advent of Void: Day 9: mdbook
+https://voidlinux.org/news/2018/12/advent-nload.html The Advent of Void: Day 10: nload
+https://voidlinux.org/news/2018/12/advent-gopass.html The Advent of Void: Day 11: gopass
+https://voidlinux.org/news/2018/12/advent-redshift.html The Advent of Void: Day 12: redshift
+https://voidlinux.org/news/2018/12/advent-feh.html The Advent of Void: Day 13: feh
+https://voidlinux.org/news/2018/12/advent-macchanger.html The Advent of Void: Day 14: macchanger
+https://voidlinux.org/news/2018/12/advent-wgetpaste.html The Advent of Void: Day 15: wgetpaste
+https://voidlinux.org/news/2018/12/advent-darkhttpd.html The Advent of Void: Day 16: darkhttpd
+https://voidlinux.org/news/2018/12/advent-qrencode.html The Advent of Void: Day 17: qrencode
+https://voidlinux.org/news/2018/12/advent-sc.html The Advent of Void: Day 18: sc
+https://voidlinux.org/news/2018/12/advent-upx.html The Advent of Void: Day 19: upx
+https://voidlinux.org/news/2018/12/advent-fex.html The Advent of Void: Day 21: fex
+https://voidlinux.org/news/2018/12/advent-autossh.html The Advent of Void: Day 22: autossh
+https://voidlinux.org/news/2018/12/advent-extrace.html The Advent of Void: Day 23: extrace
+https://voidlinux.org/news/2018/12/01-advent-gromit-mpx.html The Advent of Void: Day 24: gromit-mpx
+https://voidlinux.org/news/2018/12/02-advent-closing.html The Advent of Void: Day 24: 'Twas the Night Before Christmas
+https://voidlinux.org/news/2019/01/python3-debugging.html The curious case of Python and global variables
+https://voidlinux.org/news/2019/02/commit-bits.html The Life of a Pull Request & Where Commit Bits Come From
+https://voidlinux.org/news/2019/02/voidlinux-eu-gone.html VoidLinux.eu Is Not Ours
+https://voidlinux.org/news/2020/01/xbps-news.html News about XBPS
+https://voidlinux.org/news/2020/04/some-context.html Some Context for Recent Events
+https://voidlinux.org/news/2021/07/signing-disruption.html Repository Signing Disruption
+https://voidlinux.org/news/2021/09/hacktoberfest.html Hacktoberfest 2021
+https://voidlinux.org/news/2022/09/hacktoberfest.html Hacktoberfest 2022
+https://voidlinux.org/news/2023/01/fastly-fast-forward.html Void Accepted to Fastly Fast Forward!
+https://voidlinux.org/news/2023/02/1-new-repo-fastly.html New Repo: Fastly CDN
+https://voidlinux.org/news/2023/10/python3-external.html Changes to Python 3 and pip on Void
+https://plus.diolinux.com.br/t/configurando-a-steam-flatpak-discos-mangohud-gamemode-e-remote-play/47160 Configurando a Steam Flatpak: discos, MangoHUD, Gamemode e Remote Play - Artigos da comunidade - Diolinux Plus
+https://www.both.org/?p=3991 Looking ahead to 30 years of FreeDOS – Both.org
