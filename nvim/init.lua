@@ -21,6 +21,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'rbgrouleff/bclose.vim'
   Plug 'bradsherman/git-worktree.nvim'
+  Plug 'puremourning/vimspector'
 vim.call('plug#end')
 
 -- plugin config
@@ -57,11 +58,11 @@ vim.cmd([[
   highlight ALEErrorSign ctermbg=238 guibg=#3f3f3f
   highlight ALEWarningSign ctermbg=238 guibg=#3f3f3f
   highlight SignColumn ctermbg=238 guibg=#3f3f3f
-  highlight GitGutterAdd ctermfg=green ctermbg=238 guibg=#3f3f3f
-  highlight GitGutterDelete ctermfg=red ctermbg=238 guibg=#3f3f3f
-  highlight GitGutterChange ctermfg=grey ctermbg=238 guibg=#3f3f3f
+  highlight GitGutterAdd ctermfg=green ctermbg=238 guibg=#3f3f3f guifg=green
+  highlight GitGutterDelete guifg=red ctermfg=red ctermbg=238 guibg=#3f3f3f
+  highlight GitGutterChange guifg=lightgrey ctermfg=lightgrey ctermbg=238 guibg=#3f3f3f
+  highlight CocErrorSign ctermbg=red guibg=#3f3f3f
   highlight VertSplit ctermbg=238 ctermfg=237
-  highlight WinSeparator guifg=#3f3f3f
 ]])
 
 -- FIXME
