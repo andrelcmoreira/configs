@@ -63,6 +63,8 @@ vim.cmd([[
   highlight GitGutterChange guifg=lightgrey ctermfg=lightgrey ctermbg=238 guibg=#3f3f3f
   highlight CocErrorSign guifg=lightred guibg=#3f3f3f
   highlight VertSplit ctermbg=238 ctermfg=237
+  highlight Search guibg=lightyellow guifg=#3f3f3f
+  highlight IncSearch guibg=lightyellow guifg=#3f3f3f
 ]])
 
 -- FIXME
