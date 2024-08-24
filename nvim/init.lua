@@ -59,7 +59,7 @@ vim.cmd([[
   highlight ALEWarningSign ctermbg=238 guibg=#3f3f3f
   highlight SignColumn ctermbg=238 guibg=#3f3f3f
   highlight GitGutterAdd ctermfg=green ctermbg=238 guibg=#3f3f3f guifg=green
-  highlight GitGutterDelete guifg=red ctermfg=red ctermbg=238 guibg=#3f3f3f
+  highlight GitGutterDelete guifg=lightred ctermfg=lightred ctermbg=238 guibg=#3f3f3f
   highlight GitGutterChange guifg=lightgrey ctermfg=lightgrey ctermbg=238 guibg=#3f3f3f
   highlight CocErrorSign guifg=lightred guibg=#3f3f3f
   highlight VertSplit ctermbg=238 ctermfg=237
