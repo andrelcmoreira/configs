@@ -4,6 +4,5 @@ windows:
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/thirdy-party/void-packages
-    - clear
   panes:
-    - git fetch --all && git reset --hard upstream/master && ./check-updates
+    - git fetch --all && cd master && git reset --hard upstream/master && ./check-updates

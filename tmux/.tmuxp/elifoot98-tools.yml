@@ -1,8 +1,0 @@
-session_name: elifoot98-tools
-windows:
-- window_name: dev
-  layout: tiled
-  shell_command_before:
-    - cd $PROJECTS/elifoot98-tools
-  panes:
-    - $VISUAL elf98/equipa_viewer.py
