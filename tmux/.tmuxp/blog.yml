@@ -1,8 +1,0 @@
-session_name: blog
-windows:
-- window_name: dev
-  layout: tiled
-  shell_command_before:
-    - cd $PROJECTS/carvalhudo.github.io/articles
-  panes:
-    - $VISUAL kunit-pt1-ptbr.md -c MarkdownPreview

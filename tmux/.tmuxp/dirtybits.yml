@@ -5,4 +5,5 @@ windows:
   shell_command_before:
     - cd $PROJECTS/dirtybits
   panes:
-    - clear
+    - $VISUAL config.toml templates/*.html
+    - zola build && zola serve --port 2222
