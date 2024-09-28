@@ -1,9 +1,9 @@
-session_name: dirtybits
+session_name: blog
 windows:
 - window_name: dev
   layout: tiled
   shell_command_before:
-    - cd $PROJECTS/dirtybits
+    - cd $PROJECTS/andrelcmoreira
   panes:
     - $VISUAL config.toml templates/*.html
     - zola build && zola serve --port 2222
