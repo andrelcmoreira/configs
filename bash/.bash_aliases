@@ -1,14 +1,14 @@
 # pkg manager aliases
-alias pkg-install="sudo xbps-install -S"
-alias pkg-remove="sudo xbps-remove -R"
-alias pkg-upgrade="sudo xbps-install -Suy"
-alias pkg-update="sudo xbps-install -S"
-alias pkg-search="xbps-query -Rs"
-alias pkg-list="xbps-query -l"
-alias pkg-show="xbps-query -RS"
+alias pkg-install="sudo apt install"
+alias pkg-remove="sudo apt remove"
+alias pkg-upgrade="sudo apt upgrade"
+alias pkg-update="sudo apt update"
+alias pkg-search="apt search"
+alias pkg-list="dpkg --get-selections"
+alias pkg-show="apt show"
 alias pkg-count="pkg-list | wc -l"
-alias pkg-clean="sudo xbps-remove -O"
-alias pkg-files="xbps-query -f"
+alias pkg-clean="sudo apt autoremove"
+alias pkg-files="dpkg -L"
 
 # git aliases
 alias gs="git status"
