@@ -116,5 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
 export FZF_DEFAULT_OPTS='--color='bg+:#3a3a3a''
