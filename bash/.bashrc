@@ -17,6 +17,9 @@ HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 
+stty werase undef
+bind '\C-w:unix-filename-rubout'
+
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=90000
 HISTFILESIZE=2000
