@@ -17,7 +17,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'mhinz/vim-startify'
-  Plug ('neoclide/coc.nvim', { tag = 'v0.0.81' })
+  Plug ('neoclide/coc.nvim', { branch = 'release' })
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'rbgrouleff/bclose.vim'
   Plug 'bradsherman/git-worktree.nvim'
