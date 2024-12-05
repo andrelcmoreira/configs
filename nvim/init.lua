@@ -9,7 +9,6 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'iamcco/markdown-preview.nvim'
   Plug 'tpope/vim-surround'
-  Plug 'francoiscabrol/ranger.vim'
   Plug 'dense-analysis/ale'
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
@@ -19,6 +18,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'mhinz/vim-startify'
   Plug ('neoclide/coc.nvim', { branch = 'release' })
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope-file-browser.nvim'
   Plug 'rbgrouleff/bclose.vim'
   Plug 'bradsherman/git-worktree.nvim'
   Plug 'puremourning/vimspector'
@@ -43,6 +43,7 @@ require('telescope').setup{
 }
 
 require("telescope").load_extension("git_worktree")
+require("telescope").load_extension("file_browser")
 
 -- appearence
 vim.cmd('colorscheme zenburn')
@@ -111,6 +112,7 @@ vim.keymap.set('n', '<c-f>', ':Telescope live_grep<cr>')
 vim.keymap.set('n', '<c-e>', ':Telescope command_history<cr>')
 vim.keymap.set('n', '<c-b>', ':Telescope buffers<cr>')
 vim.keymap.set('n', '<c-g>', ':Telescope git_worktree<cr>')
+vim.keymap.set('n', '<c-q>', ':Telescope file_browser<cr>')
 
 -- buffer navigation hotkeys
 vim.keymap.set('n', '<leader>l', '<c-w><Right>')
