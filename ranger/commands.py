@@ -1,8 +1,11 @@
-import os
+import os.path
+from magic import from_file
+
 from ranger.core.loader import CommandLoader
 from ranger.api.commands import Command
 
-class fzf_select(Command):
+
+class fzf_select(Command): # pylint: disable=invalid-name
     """
     :fzf_select
 
@@ -14,7 +17,6 @@ class fzf_select(Command):
     """
     def execute(self):
         import subprocess
-        import os.path
         if self.quantifier:
             # match only directories
             command="find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
@@ -32,7 +34,8 @@ class fzf_select(Command):
             else:
                 self.fm.select_file(fzf_file)
 
-class extracthere(Command):
+
+class extracthere(Command): # pylint: disable=invalid-name
     def execute(self):
         """ Extract copied files to current directory """
         copied_files = tuple(self.fm.copy_buffer)
@@ -63,7 +66,8 @@ class extracthere(Command):
         obj.signal_bind('after', refresh)
         self.fm.loader.add(obj)
 
-class compress(Command):
+
+class compress(Command): # pylint: disable=invalid-name
     def execute(self):
         """ Compress marked files to current directory """
         cwd = self.fm.thisdir
@@ -93,7 +97,8 @@ class compress(Command):
         extension = ['.zip', '.tar.gz', '.rar', '.7z']
         return ['compress ' + os.path.basename(self.fm.thisdir.path) + ext for ext in extension]
 
-class up(Command):
+
+class up(Command): # pylint: disable=invalid-name
     def execute(self):
         if self.arg(1):
             scpcmd = ["scp", "-r"]
@@ -104,7 +109,6 @@ class up(Command):
 
 
     def tab(self):
-        import os.path
         try:
             import paramiko
         except ImportError:
@@ -123,3 +127,19 @@ class up(Command):
         # remove any wildcard host settings since they're not real servers
         hosts.discard("*")
         return (self.start(1) + host + ":" for host in hosts)
+
+
+class yank_content(Command): # pylint: disable=invalid-name
+
+    def execute(self):
+        # TODO: validate return of command
+        # TODO: handle errors
+        # TODO: handle symbolic links
+        # TODO: can we use this command for music, pdf and videos?
+        # TODO: wayland
+        file_type = from_file(str(self.fm.thisfile), mime=True)
+
+        self.fm.execute_command(
+            'xclip -selection clipboard -t {file_type} -i {self.fm.thisfile}'
+        )
+        self.fm.notify(f'content of "{self.fm.thisfile}" copied to clipboard!')
