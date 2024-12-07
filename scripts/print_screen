@@ -1,8 +1,9 @@
 #!/bin/sh
 
-filename="%Y-%m-%d-%T_$wx$h_scrot.png"
-scrot -s "$filename" -e "mv $filename $IMAGES/$filename"
+filename="%Y-%m-%d-%T_scrot.png"
+cmd_list="xclip -selection clipboard -t image/png -i $filename && \
+  mv $filename $IMAGES/$filename"
 
-if [ "$?" -eq 0 ]; then
+if scrot -s "$filename" -e "$cmd_list"; then
   notify-send 'screen captured'
 fi
