@@ -136,10 +136,12 @@ class yank_content(Command): # pylint: disable=invalid-name
         # TODO: handle errors
         # TODO: handle symbolic links
         # TODO: can we use this command for music, pdf and videos?
-        # TODO: wayland
         file_type = from_file(str(self.fm.thisfile), mime=True)
+        cmd = f'xclip -selection clipboard -i {self.fm.thisfile}'
 
-        self.fm.execute_command(
-            'xclip -selection clipboard -t {file_type} -i {self.fm.thisfile}'
-        )
+        # for images we must to explicitly specify the file type
+        if 'image/' in file_type:
+            cmd += f' -t {file_type}'
+
+        self.fm.execute_command(cmd)
         self.fm.notify(f'content of "{self.fm.thisfile}" copied to clipboard!')
