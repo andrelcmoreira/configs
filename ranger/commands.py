@@ -1,4 +1,5 @@
 import os.path
+from os import readlink
 from magic import from_file
 
 from ranger.core.loader import CommandLoader
@@ -130,18 +131,33 @@ class up(Command): # pylint: disable=invalid-name
 
 
 class yank_content(Command): # pylint: disable=invalid-name
+    """
+    :yank_content
+
+    Copy the content of a given file to the clipboard. This command is specially
+    useful for text and image files.
+    """
 
     def execute(self):
-        # TODO: validate return of command
-        # TODO: handle errors
-        # TODO: handle symbolic links
-        # TODO: can we use this command for music, pdf and videos?
-        file_type = from_file(str(self.fm.thisfile), mime=True)
-        cmd = f'xclip -selection clipboard -i {self.fm.thisfile}'
+        try:
+            file_type = from_file(str(self.fm.thisfile), mime=True)
 
-        # for images we must to explicitly specify the file type
-        if 'image/' in file_type:
-            cmd += f' -t {file_type}'
+            if file_type == 'inode/symlink':
+                src_file = readlink(str(self.fm.thisfile))
+                file_type = from_file(src_file, mime=True)
 
-        self.fm.execute_command(cmd)
-        self.fm.notify(f'content of "{self.fm.thisfile}" copied to clipboard!')
+            cmd = f'xclip -selection clipboard -i {self.fm.thisfile}'
+            # if the file is not a text file, we must to explicitly specify its
+            # type
+            if 'text/' not in file_type:
+                cmd += f' -t {file_type}'
+
+            ret = self.fm.execute_command(cmd)
+            if ret.returncode == 0:
+                self.fm.notify(
+                    f'content of "{self.fm.thisfile}" copied to clipboard!'
+                )
+        except PermissionError:
+            self.fm.notify(
+                f'no permission to view the content of "{self.fm.thisfile}"!'
+            )
