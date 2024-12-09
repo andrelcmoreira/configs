@@ -1,4 +1,5 @@
 import os.path
+from subprocess import PIPE
 from os import readlink
 from magic import from_file
 
@@ -17,7 +18,6 @@ class fzf_select(Command): # pylint: disable=invalid-name
     See: https://github.com/junegunn/fzf
     """
     def execute(self):
-        import subprocess
         if self.quantifier:
             # match only directories
             command="find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
@@ -26,8 +26,9 @@ class fzf_select(Command): # pylint: disable=invalid-name
             # match files and directories
             command="find -L . \( -path '*/\.*' -o -fstype 'dev' -o -fstype 'proc' \) -prune \
             -o -print 2> /dev/null | sed 1d | cut -b3- | fzf +m"
-        fzf = self.fm.execute_command(command, universal_newlines=True, stdout=subprocess.PIPE)
-        stdout, stderr = fzf.communicate()
+        fzf = self.fm.execute_command(command, universal_newlines=True,
+                                      stdout=PIPE)
+        stdout, _ = fzf.communicate()
         if fzf.returncode == 0:
             fzf_file = os.path.abspath(stdout.rstrip('\n'))
             if os.path.isdir(fzf_file):
@@ -37,6 +38,7 @@ class fzf_select(Command): # pylint: disable=invalid-name
 
 
 class extracthere(Command): # pylint: disable=invalid-name
+
     def execute(self):
         """ Extract copied files to current directory """
         copied_files = tuple(self.fm.copy_buffer)
@@ -69,6 +71,7 @@ class extracthere(Command): # pylint: disable=invalid-name
 
 
 class compress(Command): # pylint: disable=invalid-name
+
     def execute(self):
         """ Compress marked files to current directory """
         cwd = self.fm.thisdir
@@ -100,6 +103,7 @@ class compress(Command): # pylint: disable=invalid-name
 
 
 class up(Command): # pylint: disable=invalid-name
+
     def execute(self):
         if self.arg(1):
             scpcmd = ["scp", "-r"]
@@ -137,7 +141,6 @@ class yank_content(Command): # pylint: disable=invalid-name
     Copy the content of a given file to the clipboard. This command is specially
     useful for text and image files.
     """
-
     def execute(self):
         try:
             file_type = from_file(str(self.fm.thisfile), mime=True)
