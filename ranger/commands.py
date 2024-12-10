@@ -160,6 +160,11 @@ class yank_content(Command): # pylint: disable=invalid-name
                 self.fm.notify(
                     f'content of "{self.fm.thisfile}" copied to clipboard!'
                 )
+            else:
+                self.fm.notify(
+                    f'fail to copy the content of "{self.fm.thisfile}"!',
+                    bad=True
+                )
         except PermissionError:
             self.fm.notify(
                 f'no permission to view the content of "{self.fm.thisfile}"!'
