@@ -1,7 +1,6 @@
 import os.path
 from subprocess import PIPE
 from os import readlink
-from magic import from_file
 
 from ranger.core.loader import CommandLoader
 from ranger.api.commands import Command
@@ -143,11 +142,13 @@ class yank_content(Command): # pylint: disable=invalid-name
     """
     def execute(self):
         try:
-            file_type = from_file(str(self.fm.thisfile), mime=True)
+            import magic
+
+            file_type = magic.from_file(str(self.fm.thisfile), mime=True)
 
             if file_type == 'inode/symlink':
                 src_file = readlink(str(self.fm.thisfile))
-                file_type = from_file(src_file, mime=True)
+                file_type = magic.from_file(src_file, mime=True)
 
             cmd = f'xclip -selection clipboard -i {self.fm.thisfile}'
             # if the file is not a text file, we must to explicitly specify its
@@ -167,5 +168,8 @@ class yank_content(Command): # pylint: disable=invalid-name
                 )
         except PermissionError:
             self.fm.notify(
-                f'no permission to view the content of "{self.fm.thisfile}"!'
+                f'no permission to view the content of "{self.fm.thisfile}"!',
+                bad=True
             )
+        except ImportError:
+            self.fm.notify('libmagic not installed', bad=True)
