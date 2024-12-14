@@ -1,6 +1,0 @@
-session_name: glue
-windows:
-- window_name: dev
-  layout: tiled
-  shell_command_before:
-    - cd $PROJECTS/glue
