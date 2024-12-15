@@ -24,6 +24,10 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 # Type: Bool
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
+# Enable pdf.js.
+# Type: Bool
+config.set('content.pdfjs', True)
+
 # Directory to save downloads to. If unset, a sensible OS-specific
 # default is used.
 # Type: Directory
