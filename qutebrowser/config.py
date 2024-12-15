@@ -440,7 +440,7 @@ config.bind('E', 'spawn xfce4-terminal -e "nvim /home/andre/.config/qutebrowser/
 # `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 # Same as `{column}`, but starting from index 0.
 # Type: ShellCommand
-c.editor.command = ['urxvt', '-e', 'nvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = ['xfce4-terminal', '-x', 'nvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 
 # Search engines which can be used via the address bar. Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
