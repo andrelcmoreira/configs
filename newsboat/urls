@@ -1,67 +1,50 @@
-+OS
-https://bootlin.com/feed/
-https://voidlinux.org/atom.xml
-https://blog.netbsd.org/tnf/feed/entries/atom
-https://www.reddit.com/r/BSD/top.rss?t=week
-https://www.reddit.com/r/commandline/top.rss?t=week
-https://www.reddit.com/r/linux/top.rss?t=week
-https://www.reddit.com/r/Redox/top.rss?t=week
-https://www.theseus-os.com/feed.xml
-https://weekly.nixos.org/feeds/all.rss.xml
-https://www.freebsd.org/news/feed.xml
-http://www.netbsd.org/changes/rss-netbsd.xml
-https://www.phoronix.com/rss.php
-
-+SECURITY
-https://0x00sec.org/posts.rss
-https://0x00sec.org/latest.rss
-https://www.mentebinaria.com.br/rss/2-mente-bin%C3%A1ria-f%C3%B3rum.xml/?member_id=2817&key=23a841bac058ee7d0003bda0b8c221d9
-https://www.mentebinaria.com.br/rss/1-mente-bin%C3%A1ria.xml/?member_id=2817&key=23a841bac058ee7d0003bda0b8c221d9
-https://www.reddit.com/r/ctfbr/top.rss?t=week
-https://www.reddit.com/r/hackthebox/top.rss?t=week
-https://www.reddit.com/r/hardwarehacking/top.rss?t=week
-https://www.reddit.com/r/Malware/top.rss?t=week
-
-+DEVOPS
-https://www.reddit.com/r/ansible/top.rss?t=week
-https://www.reddit.com/r/devops/top.rss?t=week
-https://www.reddit.com/r/docker/top.rss?t=week
-
-+EMBEDDED SYSTEMS
-https://embeddedbits.org/index.xml
-https://sergioprado.blog/index.xml
-https://interrupt.memfault.com/blog/feed.xml
-https://www.reddit.com/r/embedded/top.rss?t=week
-
-+PROGRAMMING
-https://www.reddit.com/r/AssemblyLanguage/top.rss?t=week
-https://www.reddit.com/r/C_Programming/top.rss?t=week
-https://www.reddit.com/r/cpp/top.rss?t=week
-https://www.reddit.com/r/flask/top.rss?t=week
-https://www.reddit.com/r/Python/top.rss?t=week
-https://www.reddit.com/r/rust/top.rss?t=week
-
-+RETROCOMPUTING
-https://www.reddit.com/r/retrocomputing/top.rss?t=week
-
-+RETROGAMING
-https://www.reddit.com/r/bigboxcollectors/top.rss?t=week
-https://www.reddit.com/r/MasterSystem/top.rss?t=week
-https://www.reddit.com/r/psx/top.rss?t=week
-https://www.reddit.com/r/SegaSaturn/top.rss?t=week
-https://www.reddit.com/r/snes/top.rss?t=week
-https://www.reddit.com/r/dreamcast/top.rss?t=week
-https://www.copetti.org/index.xml
-https://www.smspower.org:443/forums/rss.php?f=8&t=1&sid=ee6082e64522a5562fd4b5ed4d7d4b50
-
-+MISC
-https://feeds.feedburner.com/TheHackersNews
-https://hackaday.com/blog/feed/
-https://www.reddit.com/r/qutebrowser/top.rss?t=week
-https://www.reddit.com/r/suckless/top.rss?t=week
-https://www.reddit.com/r/vim/top.rss?t=week
-https://repology.org/maintainer/andrelcmoreira@disroot.org/feed-for-repo/void_x86_64/atom
-https://andrelcmoreira.me/atom.xml
-
-+PODCASTS
-https://retropolis.com.br/feed/podcast
+https://bootlin.com/feed/ os
+https://voidlinux.org/atom.xml os
+https://blog.netbsd.org/tnf/feed/entries/atom os
+https://www.reddit.com/r/BSD/top.rss?t=week os
+https://www.reddit.com/r/commandline/top.rss?t=week os
+https://www.reddit.com/r/linux/top.rss?t=week os
+https://www.reddit.com/r/Redox/top.rss?t=week os
+https://www.theseus-os.com/feed.xml os
+https://weekly.nixos.org/feeds/all.rss.xml os
+https://www.freebsd.org/news/feed.xml os
+http://www.netbsd.org/changes/rss-netbsd.xml os
+https://www.phoronix.com/rss.php os
+https://0x00sec.org/posts.rss security
+https://0x00sec.org/latest.rss security
+https://www.mentebinaria.com.br/rss/2-mente-bin%C3%A1ria-f%C3%B3rum.xml/?member_id=2817&key=23a841bac058ee7d0003bda0b8c221d9 security
+https://www.mentebinaria.com.br/rss/1-mente-bin%C3%A1ria.xml/?member_id=2817&key=23a841bac058ee7d0003bda0b8c221d9 security
+https://www.reddit.com/r/ctfbr/top.rss?t=week security
+https://www.reddit.com/r/hackthebox/top.rss?t=week security
+https://www.reddit.com/r/hardwarehacking/top.rss?t=week security
+https://www.reddit.com/r/Malware/top.rss?t=week security
+https://www.reddit.com/r/ansible/top.rss?t=week devops
+https://www.reddit.com/r/devops/top.rss?t=week devops
+https://www.reddit.com/r/docker/top.rss?t=week devops
+https://embeddedbits.org/index.xml embedded
+https://sergioprado.blog/index.xml embedded
+https://interrupt.memfault.com/blog/feed.xml embedded
+https://www.reddit.com/r/embedded/top.rss?t=week embedded
+https://www.reddit.com/r/AssemblyLanguage/top.rss?t=week programming
+https://www.reddit.com/r/C_Programming/top.rss?t=week programming
+https://www.reddit.com/r/cpp/top.rss?t=week programming
+https://www.reddit.com/r/flask/top.rss?t=week programming
+https://www.reddit.com/r/Python/top.rss?t=week programming
+https://www.reddit.com/r/rust/top.rss?t=week programming
+https://www.reddit.com/r/retrocomputing/top.rss?t=week retrocomputing
+https://www.reddit.com/r/bigboxcollectors/top.rss?t=week retrogaming
+https://www.reddit.com/r/MasterSystem/top.rss?t=week retrogaming
+https://www.reddit.com/r/psx/top.rss?t=week retrogaming
+https://www.reddit.com/r/SegaSaturn/top.rss?t=week retrogaming
+https://www.reddit.com/r/snes/top.rss?t=week retrogaming
+https://www.reddit.com/r/dreamcast/top.rss?t=week retrogaming
+https://www.copetti.org/index.xml retrogaming
+https://www.smspower.org:443/forums/rss.php?f=8&t=1&sid=ee6082e64522a5562fd4b5ed4d7d4b50 retrogaming
+https://feeds.feedburner.com/TheHackersNews misc
+https://hackaday.com/blog/feed/ misc
+https://www.reddit.com/r/qutebrowser/top.rss?t=week misc
+https://www.reddit.com/r/suckless/top.rss?t=week misc
+https://www.reddit.com/r/vim/top.rss?t=week misc
+https://repology.org/maintainer/andrelcmoreira@disroot.org/feed-for-repo/void_x86_64/atom misc
+https://andrelcmoreira.me/atom.xml misc
+https://retropolis.com.br/feed/podcast podcast
