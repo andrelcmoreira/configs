@@ -22,6 +22,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'rbgrouleff/bclose.vim'
   Plug 'bradsherman/git-worktree.nvim'
   Plug 'puremourning/vimspector'
+  Plug 'nvim-tree/nvim-web-devicons'
 vim.call('plug#end')
 
 -- plugin config
