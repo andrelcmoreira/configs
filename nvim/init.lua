@@ -112,7 +112,7 @@ vim.keymap.set('n', '<c-f>', ':Telescope live_grep<cr>')
 vim.keymap.set('n', '<c-e>', ':Telescope command_history<cr>')
 vim.keymap.set('n', '<c-b>', ':Telescope buffers<cr>')
 vim.keymap.set('n', '<c-g>', ':Telescope git_worktree<cr>')
-vim.keymap.set('n', '<c-q>', ':Telescope file_browser<cr>')
+vim.keymap.set('n', '<c-q>', ':Telescope file_browser path=%:p:h select_buffer=true<cr>')
 
 -- buffer navigation hotkeys
 vim.keymap.set('n', '<leader>l', '<c-w><Right>')
