@@ -1,0 +1,15 @@
+session_name: hero8
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/hero8
+  panes:
+    - $VISUAL src/main.rs
+
+- window_name: test
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/hero8
+  panes:
+    - cargo build
