@@ -53,7 +53,7 @@ bindsym $mod+Shift+n exec $TERMINAL -e newsboat --title=newsboat
 set $mod Mod4
 
 # set font
-font pango:Cascadia Code 17
+font pango:Cascadia Code 16
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -153,6 +153,8 @@ for_window [class="qutebrowser"] move to workspace $ws2
 for_window [class="qutebrowser"] focus
 for_window [class="Firefox"] move to workspace $ws2
 for_window [class="Firefox"] focus
+for_window [class="Chromium"] move to workspace $ws2
+for_window [class="Chromium"] focus
 
 for_window [class="URxvt"] move to workspace $ws3
 for_window [class="URxvt"] focus
