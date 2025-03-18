@@ -1,7 +1,16 @@
 #!/bin/sh
 
-workspaces=$(ls ~/.tmuxp | cut -f1 -d'.')
-lines=$(echo "$workspaces" | wc -l)
+# TODO: look for a better way to do this
 
-selected_ws=$(echo "$workspaces" | rofi -dmenu -p "Select the project" -width 22 -lines "$lines")
-[ -z "$selected_ws" ] || "$TERMINAL" -e "tmuxp load $selected_ws"
+workspaces=""
+for i in $(ls ~/.tmuxp); do
+  workspaces=" $i\n$workspaces"
+done
+
+selected=$( \
+  echo "$workspaces" | \
+  rofi -dmenu -p "Select the project" -width 22 | \
+  cut -f2 -d' ' | \
+  cut -f1 -d'.' \
+)
+[ -z "$selected" ] || "$TERMINAL" -e "tmuxp load $selected"
