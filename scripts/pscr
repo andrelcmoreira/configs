@@ -4,6 +4,4 @@ filename="%Y-%m-%d-%T_scrot.png"
 cmd_list="xclip -selection clipboard -t image/png -i $filename && \
   mv $filename $IMAGES/$filename"
 
-if scrot -s "$filename" -e "$cmd_list"; then
-  notify-send 'screen captured'
-fi
+scrot -s "$filename" -e "$cmd_list" && notify-send 'screen captured'

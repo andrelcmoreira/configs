@@ -21,7 +21,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
 
 # print screen shortcut
-bindsym $mod+Shift+s exec $SCRIPTS/print_screen
+bindsym $mod+Shift+s exec $SCRIPTS/pscr
 
 #bindsym $mod+Shift+m exec /bin/sh $SCRIPTS/session_manager
 bindsym $mod+Shift+m exec $TERMINAL -e neomutt --title=neomutt
@@ -33,10 +33,10 @@ bindsym $mod+d exec "rofi -modi run,drun -show drun -show-icons -display-drun 'C
 bindsym $mod+u exec "qsudo /usr/bin/usb-rofi -u"
 
 # launch tmux section selector script
-bindsym $mod+Shift+d exec $SCRIPTS/tmux-session-selector
+bindsym $mod+Shift+d exec $SCRIPTS/tss
 
 # launche workspace selector
-bindsym $mod+Shift+w exec /bin/sh $SCRIPTS/workspace-selector
+bindsym $mod+Shift+w exec /bin/sh $SCRIPTS/ws
 
 # launch telegram
 bindsym $mod+Shift+t exec telegram-desktop
