@@ -1,29 +1,25 @@
 #!/bin/sh
 
-CMD_OUT=$(acpi -b | tr -d ',')
-PERCENT=$(echo "$CMD_OUT" | awk '{print $4}' | tr -d '%')
-STATUS_STR=$(echo "$CMD_OUT" | awk '{print $3}')
+cmd_out=$(acpi -b | tr -d ',')
+percent=$(echo "$cmd_out" | awk '{print $4}' | tr -d '%')
+status_str=$(echo "$cmd_out" | awk '{print $3}')
 
-if [ "$STATUS_STR" = "Charging" ]; then
-  STATUS="+"
-elif [ "$STATUS_STR" = "Discharging" ]; then
-  STATUS="-"
+case $status_str in
+  "Charging") status=" +" ;;
+  "Discharging") status=" -" ;;
+  *) status="" ;;
+esac
+
+if [ "$percent" -gt 90 ]; then # 91 - 100
+  icon=
+elif [ "$percent" -lt 91 ] && [ "$percent" -gt 74 ]; then # 75 - 90
+  icon=
+elif [ "$percent" -lt 75 ] && [ "$percent" -gt 49 ]; then # 50 - 74
+  icon=
+elif [ "$percent" -lt 50 ] && [ "$percent" -gt 5 ]; then # 6 - 49
+  icon=
 else
-  STATUS=""
+  icon=  # 0 - 5
 fi
 
-if [ "$PERCENT" -gt 90 ]; then
-  ICON=
-elif [ "$PERCENT" -lt 91 ] && [ "$PERCENT" -gt 74 ]; then
-  ICON=
-elif [ "$PERCENT" -lt 75 ] && [ "$PERCENT" -gt 49 ]; then
-  ICON=
-elif [ "$PERCENT" -lt 50 ] && [ "$PERCENT" -gt 5 ]; then
-  ICON=
-else
-  ICON=
-fi
-
-echo "${ICON}" "${STATUS}" "${PERCENT}"%
-
-exit 0
+echo "${icon}" "${status}" "${percent}"%
