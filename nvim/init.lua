@@ -23,6 +23,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'bradsherman/git-worktree.nvim'
   Plug 'puremourning/vimspector'
   Plug 'nvim-tree/nvim-web-devicons'
+  Plug 'francoiscabrol/ranger.vim'
 vim.call('plug#end')
 
 -- plugin config
