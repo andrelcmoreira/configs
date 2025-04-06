@@ -4,3 +4,4 @@ windows:
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/x9
+    - nv src/main.cc
