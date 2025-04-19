@@ -135,6 +135,10 @@ vim.keymap.set('n', '<leader>gca', ':Git commit --amend<cr>')
 vim.keymap.set('n', '<leader>gh', ':diffget //2<cr>')
 vim.keymap.set('n', '<leader>gl', ':diffget //3<cr>')
 
+-- code navigation
+vim.keymap.set('n', '<leader>gd', ":call CocActionAsync('jumpDefinition')<cr>")
+vim.keymap.set('n', '<leader>gi', ":call CocActionAsync('jumpImplementation')<cr>")
+
 -- other
 vim.keymap.set('n', '<a-;>', '<Esc>')
 vim.keymap.set('c', '<a-;>', '<Esc>')
