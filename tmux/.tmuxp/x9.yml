@@ -5,3 +5,10 @@ windows:
   shell_command_before:
     - cd $PROJECTS/x9
     - nv src/main.cc
+
+- window_name: test
+  layout: main-horizontal
+  shell_command_before:
+    - cd $PROJECTS/x9
+  panes:
+    - cmake --build build
