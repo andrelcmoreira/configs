@@ -70,11 +70,8 @@ vim.cmd([[
   highlight IncSearch guibg=lightyellow guifg=#3f3f3f
 ]])
 
--- FIXME
---if (vim.bo.filetype == 'c') or (vim.bo.filetype == 'cpp') or (vim.bo.filetype == 'python') then
 vim.cmd('let &colorcolumn=join(range(81,999),",")')
 vim.cmd('highlight ColorColumn ctermbg=238 guibg=#3f3f3f')
---end
 
 -- misc
 vim.cmd('set hidden')
