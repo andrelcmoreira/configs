@@ -39,7 +39,7 @@ vim.g.airline_symbols_ascii = 1
 require('telescope').setup{
   defaults = {
     file_ignore_patterns = {
-      "tags"
+      "tags", "%.pyc"
     }
   }
 }
