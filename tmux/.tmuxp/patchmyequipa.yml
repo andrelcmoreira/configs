@@ -1,0 +1,15 @@
+session_name: patchmyequipa
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/patchmyequipa
+  panes:
+    - $VISUAL manage.py
+
+- window_name: test
+  layout: main-horizontal
+  shell_command_before:
+    - cd $PROJECTS/patchmyequipa
+  panes:
+    - docker compose --env-file .env.dbg up --build
