@@ -132,7 +132,9 @@ vim.keymap.set('n', '<leader>gca', ':Git commit --amend<cr>')
 vim.keymap.set('n', '<leader>gh', ':diffget //2<cr>')
 vim.keymap.set('n', '<leader>gl', ':diffget //3<cr>')
 
--- code navigation
+-- coc hotkeys
+vim.keymap.set('n', '<leader>dh', ':CocCommand document.disableInlayHint<cr>')
+vim.keymap.set('n', '<leader>eh', ':CocCommand document.enableInlayHint<cr>')
 vim.keymap.set('n', '<leader>gd', ":call CocActionAsync('jumpDefinition')<cr>")
 vim.keymap.set('n', '<leader>gi', ":call CocActionAsync('jumpImplementation')<cr>")
 
@@ -148,3 +150,7 @@ vim.api.nvim_create_autocmd('BufWritePre', {
   pattern = '',
   command = '%s/\\s\\+$//e'
 })
+--vim.api.nvim_create_autocmd('ToDecimal', {
+--  pattern = '',
+--  command = '%s/0x[0-9a-fA-F]\\+/\\=str2nr(submatch(0), 16)'
+--})
