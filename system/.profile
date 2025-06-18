@@ -4,5 +4,4 @@
 
 setxkbmap br
 
-exec volumeicon &
 exec nm-applet &
