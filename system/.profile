@@ -4,4 +4,5 @@
 
 setxkbmap br
 
+exec pa-applet &
 exec nm-applet &
