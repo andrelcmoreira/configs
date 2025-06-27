@@ -24,6 +24,7 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
   Plug 'puremourning/vimspector'
   Plug 'nvim-tree/nvim-web-devicons'
   Plug 'francoiscabrol/ranger.vim'
+  Plug 'easymotion/vim-easymotion'
 vim.call('plug#end')
 
 -- plugin config
