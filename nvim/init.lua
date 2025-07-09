@@ -151,6 +151,11 @@ vim.api.nvim_create_autocmd('BufWritePre', {
   pattern = '',
   command = '%s/\\s\\+$//e'
 })
+vim.api.nvim_create_autocmd("TextYankPost", {
+    callback = function()
+        vim.highlight.on_yank()
+    end,
+})
 --vim.api.nvim_create_autocmd('ToDecimal', {
 --  pattern = '',
 --  command = '%s/0x[0-9a-fA-F]\\+/\\=str2nr(submatch(0), 16)'
