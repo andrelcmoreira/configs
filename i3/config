@@ -24,7 +24,7 @@ bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle
 bindsym $mod+Shift+s exec $SCRIPTS/pscr
 
 #bindsym $mod+Shift+m exec /bin/sh $SCRIPTS/session_manager
-bindsym $mod+Shift+m exec $TERMINAL -e neomutt --title=neomutt
+bindsym $mod+Shift+m exec $TERMINAL --title=neomutt -e neomutt
 
 # launch rofi
 bindsym $mod+d exec "rofi -modi run,drun -show drun -show-icons -display-drun 'Choose the app' -drun-display-format {name} -line-padding 3"
@@ -45,10 +45,10 @@ bindsym $mod+Shift+t exec telegram-desktop
 bindsym $mod+Control+l exec betterlockscreen -l blur 3
 
 # launch ranger
-bindsym $mod+Shift+f exec $TERMINAL -e ranger --title=ranger
+bindsym $mod+Shift+f exec $TERMINAL --title=ranger -e ranger
 
 # launch newboat
-bindsym $mod+Shift+n exec $TERMINAL -e newsboat --title=newsboat
+bindsym $mod+Shift+n exec $TERMINAL --title=newsboat -e newsboat
 
 set $mod Mod4
 
@@ -158,19 +158,19 @@ for_window [class="Chromium"] focus
 
 for_window [class="URxvt"] move to workspace $ws3
 for_window [class="URxvt"] focus
-for_window [class="Xfce4-terminal"] move to workspace $ws3
-for_window [class="Xfce4-terminal"] focus
+for_window [class="Alacritty"] move to workspace $ws3
+for_window [class="Alacritty"] focus
 
-for_window [class="Xfce4-terminal" title="ranger"] move to workspace $ws4
-for_window [class="Xfce4-terminal" title="ranger"] focus
+for_window [class="Alacritty" title="ranger"] move to workspace $ws4
+for_window [class="Alacritty" title="ranger"] focus
 
 for_window [class="Zathura"] move to workspace $ws5
 for_window [class="Zathura"] focus
 for_window [class="Evince"] move to workspace $ws5
 for_window [class="Evince"] focus
 
-for_window [class="Xfce4-terminal" title="newsboat"] move to workspace $ws6
-for_window [class="Xfce4-terminal" title="newsboat"] focus
+for_window [class="Alacritty" title="newsboat"] move to workspace $ws6
+for_window [class="Alacritty" title="newsboat"] focus
 
 for_window [class="Telegram"] move to workspace $ws8
 for_window [class="Telegram"] focus
@@ -186,8 +186,8 @@ for_window [class="Kicad"] focus
 for_window [class="VirtualBox Manager"] move to workspace $ws7
 for_window [class="VirtualBox Manager"] focus
 
-for_window [class="Xfce4-terminal" title="neomutt"] move to workspace $ws9
-for_window [class="Xfce4-terminal" title="neomutt"] focus
+for_window [class="alacritty" title="neomutt"] move to workspace $ws9
+for_window [class="alacritty" title="neomutt"] focus
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

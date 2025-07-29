@@ -5,4 +5,4 @@ session=$( \
   rofi -dmenu -p "Select the session" -line-padding 3 | \
   cut -f1 -d':' \
 )
-[ -z "$session" ] || "$TERMINAL" -e "tmux attach-session -t \"$session\""
+[ -z "$session" ] || "$TERMINAL" -e tmux attach-session -t "$session"

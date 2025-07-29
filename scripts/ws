@@ -5,4 +5,4 @@ selected_ws=$( \
   echo "$workspaces" | \
   rofi -dmenu -p "Select the project" -width 22
 )
-[ -z "$selected_ws" ] || "$TERMINAL" -e "tmuxp load $selected_ws"
+[ -z "$selected_ws" ] || "$TERMINAL" -e tmuxp load $selected_ws
