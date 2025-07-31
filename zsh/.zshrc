@@ -1,47 +1,46 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/andre/.oh-my-zsh"
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-
-PS1='%n@%m:[$fg[cyan]%[%]%c%{$reset_color%}]$ '
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-completions
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
-unsetopt share_history
+# User configuration
 
-alias v="vim"
-alias nv="nvim"
-alias xcp="xclip -selection clipboard"
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias xi="sudo xbps-install -Sv"
-alias xq="xbps-query -Rs"
-alias xr="sudo xbps-remove -Rv"
-alias xu="sudo xbps-install -Suyv"
+# prompt
+PS1='[%n@%m %c]$ '
 
-alias gs="git status"
-alias gc="git commit"
-alias gl="git log"
-alias ga="git add"
-alias gr="git rebase"
-alias gm="git merge"
-alias gb="git branch"
-alias gf="git fetch --all"
-alias gca="git commit --amend"
-alias gpl="git pull --rebase origin"
-alias gps="git push origin"
-alias gch="git checkout"
-alias gcp="git cherry-pick"
+source ~/.bash_aliases # TODO
 
-if [ -f ~/.fzf.zsh ]; then
-    source ~/.fzf.zsh
-    export FZF_DEFAULT_OPTS='--color='bg+:#3f3f3f''
+# fzf configs
+export FZF_DEFAULT_OPTS="--color='bg+:#3a3a3a' --preview='cat {}'"
+if [ -f /usr/share/fzf/key-bindings.bash ]; then
+  source /usr/share/fzf/key-bindings.zsh
 fi
 
-source ~/.local/share/fzf/fzf-tab.plugin.zsh
-PATH=$PATH:~/.local/bin
+. "$HOME/.cargo/env"
