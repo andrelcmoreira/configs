@@ -1,4 +1,4 @@
-session_name: configs
+session_name: dotfiles
 windows:
 - window_name: dev
   layout: tiled
