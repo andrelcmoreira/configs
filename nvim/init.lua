@@ -159,23 +159,37 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 -- vimspector commands
 vim.api.nvim_create_user_command(
-  'VimspectorLaunch',
+  'StartDebugger',
   function()
     vim.cmd("call vimspector#Launch()")
   end,
   {}
 )
 vim.api.nvim_create_user_command(
-  'VimspectorToggleBreakpoint',
+  'StopDebugger',
+  function()
+    vim.cmd("call vimspector#Reset()")
+  end,
+  {}
+)
+vim.api.nvim_create_user_command(
+  'SetBreakpoint',
   function()
     vim.cmd("call vimspector#ToggleBreakpoint()")
   end,
   {}
 )
 vim.api.nvim_create_user_command(
-  'VimspectorClearBreakpoints',
+  'ClearBreakpoints',
   function()
     vim.cmd("call vimspector#ClearBreakpoints()")
+  end,
+  {}
+)
+vim.api.nvim_create_user_command(
+  'ListBreakpoints',
+  function()
+    vim.cmd("call vimspector#ListBreakpoints()")
   end,
   {}
 )
