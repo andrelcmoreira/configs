@@ -152,10 +152,33 @@ vim.api.nvim_create_autocmd('BufWritePre', {
   command = '%s/\\s\\+$//e'
 })
 vim.api.nvim_create_autocmd("TextYankPost", {
-    callback = function()
-        vim.highlight.on_yank()
-    end,
+  callback = function()
+    vim.highlight.on_yank()
+  end,
 })
+
+-- vimspector commands
+vim.api.nvim_create_user_command(
+  'VimspectorLaunch',
+  function()
+    vim.cmd("call vimspector#Launch()")
+  end,
+  {}
+)
+vim.api.nvim_create_user_command(
+  'VimspectorToggleBreakpoint',
+  function()
+    vim.cmd("call vimspector#ToggleBreakpoint()")
+  end,
+  {}
+)
+vim.api.nvim_create_user_command(
+  'VimspectorClearBreakpoints',
+  function()
+    vim.cmd("call vimspector#ClearBreakpoints()")
+  end,
+  {}
+)
 --vim.api.nvim_create_autocmd('ToDecimal', {
 --  pattern = '',
 --  command = '%s/0x[0-9a-fA-F]\\+/\\=str2nr(submatch(0), 16)'
