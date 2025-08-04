@@ -36,6 +36,7 @@ vim.g.mkdp_browser = "qutebrowser"
 vim.g.coc_disable_startup_warning = 1
 vim.g.airline_theme = "zenburn"
 vim.g.airline_symbols_ascii = 1
+vim.g.vimspector_enable_mappings = 'VISUAL_STUDIO'
 
 require('telescope').setup{
   defaults = {
