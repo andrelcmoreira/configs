@@ -14,12 +14,12 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh_aliases
+source $HOME/.zsh_aliases
 
 PS1='[%n@%m %c]$ '
 
 export FZF_DEFAULT_OPTS="--color='bg+:#3a3a3a' --preview='cat {}'"
-if [ -f /usr/share/fzf/key-bindings.bash ]; then
+if [ -f /usr/share/fzf/key-bindings.zsh ]; then
   source /usr/share/fzf/key-bindings.zsh
 fi
 
