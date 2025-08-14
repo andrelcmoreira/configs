@@ -85,6 +85,7 @@ vim.cmd('set numberwidth=5')
 vim.cmd('syntax on')
 vim.cmd('filetype detect')
 vim.cmd('set showmatch')
+vim.cmd('set foldmethod=syntax')
 
 -- indentation
 vim.bo.shiftwidth = 2
