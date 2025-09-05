@@ -433,9 +433,9 @@ config.bind('B', ':buffer')
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
 config.bind('M', 'hint links spawn mpv {hint-url}')
-config.bind('D', 'hint links spawn youtube-dl --all-subs --output "/home/andre/Vídeos" {hint-url}')
+config.bind('D', 'hint links spawn yt-dlp --all-subs --output "/home/andre/videos/video" {hint-url}')
 config.bind('e', 'open-editor')
-config.bind('E', 'spawn xfce4-terminal -e "nvim /home/andre/.config/qutebrowser/config.py"')
+config.bind('E', 'spawn alacritty -e nvim /home/andre/.config/qutebrowser/config.py')
 
 # Editor (and arguments) to use for the `open-editor` command. The
 # following placeholders are defined: * `{file}`: Filename of the file
@@ -444,7 +444,7 @@ config.bind('E', 'spawn xfce4-terminal -e "nvim /home/andre/.config/qutebrowser/
 # `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 # Same as `{column}`, but starting from index 0.
 # Type: ShellCommand
-c.editor.command = ['xfce4-terminal', '-x', 'nvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = ['alacritty', '-e', 'nvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 
 # Search engines which can be used via the address bar. Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
