@@ -5,6 +5,14 @@
 
 # Uncomment this to still load settings configured via autoconfig.yml
 # config.load_autoconfig()
+from os import getenv
+
+
+EDITOR = getenv('VISUAL')
+TERMINAL = getenv('TERMINAL')
+QB_CONFIG = getenv('QUTEBROWSER_CFG_FILE')
+VIDEO_PATH = getenv('VIDEOS') + '/'
+
 
 # Always restore open sites when qutebrowser is reopened.
 # Type: Bool
@@ -15,7 +23,6 @@ config.load_autoconfig()
 # Enable JavaScript.
 # Type: Bool
 config.set('content.javascript.enabled', True, 'file://*')
-
 # Enable JavaScript.
 # Type: Bool
 config.set('content.javascript.enabled', True, 'chrome://*/*')
@@ -433,9 +440,9 @@ config.bind('B', ':buffer')
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
 config.bind('M', 'hint links spawn mpv {hint-url}')
-config.bind('D', 'hint links spawn yt-dlp --all-subs --output "/home/andre/videos/video" {hint-url}')
+config.bind('D', 'hint links spawn yt-dlp --all-subs --output ' + VIDEO_PATH + ' {hint-url}')
 config.bind('e', 'open-editor')
-config.bind('E', 'spawn alacritty -e nvim /home/andre/.config/qutebrowser/config.py')
+config.bind('E', f'spawn {TERMINAL} -e {EDITOR} {QB_CONFIG}')
 
 # Editor (and arguments) to use for the `open-editor` command. The
 # following placeholders are defined: * `{file}`: Filename of the file
@@ -444,7 +451,15 @@ config.bind('E', 'spawn alacritty -e nvim /home/andre/.config/qutebrowser/config
 # `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 # Same as `{column}`, but starting from index 0.
 # Type: ShellCommand
-c.editor.command = ['alacritty', '-e', 'nvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = [
+    f'{TERMINAL}',
+    '-e',
+    f'{EDITOR}',
+    '-f',
+    '{file}',
+    '-c',
+    'normal {line}G{column0}l'
+]
 
 # Search engines which can be used via the address bar. Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
@@ -459,9 +474,7 @@ c.url.searchengines = {
     'DEFAULT': 'https://duckduckgo.com/?q={}',
     'y': 'https://www.youtube.com/results?search_query={}',
     'g': 'https://www.google.com.ar/search?q={}',
-    'w': 'https://en.wikipedia.org/wiki/{}',
     'gh': 'https://github.com/search?q={}',
-    'so': 'https://stackoverflow.com/search?q={}',
     't': 'https://translate.google.com/#view=home&op=translate&sl=en&tl=pt&text={}'
 }
 
