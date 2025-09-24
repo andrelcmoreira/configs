@@ -1,0 +1,7 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/zenburn.toml"
+]
+
+[font]
+size = 16
