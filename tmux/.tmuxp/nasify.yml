@@ -5,11 +5,11 @@ windows:
   shell_command_before:
     - cd $PROJECTS/nasify
   panes:
-    - $VISUAL create-nas.yml
+    - $VISUAL nasify.yml
 
 - window_name: test
   layout: tiled
   shell_command_before:
     - cd $PROJECTS/nasify
   panes:
-    - ansible-playbook -i hosts create-nas.yml -K
+    - ansible-playbook -i hosts nasify.yml -K
