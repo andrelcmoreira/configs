@@ -11,6 +11,6 @@ windows:
   layout: main-horizontal
   shell_command_before:
     - cd $PROJECTS/libelifoot
-    - source dev/bin/activate
+    - source .dev/bin/activate
   panes:
     - pytest -v --cov=libelifoot --cov-report=term-missing tests/
