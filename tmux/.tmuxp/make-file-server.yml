@@ -1,0 +1,15 @@
+session_name: make-file-server
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/make-file-server
+  panes:
+    - $VISUAL make-file-server.yml
+
+- window_name: test
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/make-file-server
+  panes:
+    - ansible-playbook -i hosts make-file-server.yml -K
