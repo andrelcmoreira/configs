@@ -7,10 +7,13 @@ https://www.reddit.com/r/linux/top.rss?t=week os
 https://www.reddit.com/r/Redox/top.rss?t=week os
 https://www.theseus-os.com/feed.xml os
 https://weekly.nixos.org/feeds/all.rss.xml os
+https://nixos.org/blog/stories-rss.xml os
+https://guix.gnu.org/feeds/blog.atom os
 https://www.freebsd.org/news/feed.xml os
 http://www.netbsd.org/changes/rss-netbsd.xml os
 https://www.phoronix.com/rss.php os
 https://inbox.vuxu.org/9fans/new.atom os
+https://www.gnu.org/software/hurd/index.atom os
 https://0x00sec.org/posts.rss security
 https://0x00sec.org/latest.rss security
 https://www.mentebinaria.com.br/rss/2-mente-bin%C3%A1ria-f%C3%B3rum.xml/?member_id=2817&key=23a841bac058ee7d0003bda0b8c221d9 security
