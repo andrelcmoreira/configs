@@ -21,3 +21,5 @@ browser qutebrowser
 
 auto-reload yes
 reload-time 10
+
+bookmark-cmd ${HOME}/.newsboat/plugins/bookmark.sh
