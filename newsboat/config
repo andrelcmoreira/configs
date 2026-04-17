@@ -2,7 +2,8 @@ include /usr/share/doc/newsboat/contrib/colorschemes/greenscreen
 
 browser linkhandler
 macro , open-in-browser
-macro v set browser "mpv %u" ; one; set browser qutebrowser
+macro v set browser "mpv %u" ; one ; set browser qutebrowser
+macro y set browser "${HOME}/.newsboat/plugins/yank-url.sh %u" ; one ; set browser qutebrowser
 
 # TODO: macro to yank the current link
 
