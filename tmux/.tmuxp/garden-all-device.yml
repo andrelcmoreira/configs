@@ -1,0 +1,8 @@
+session_name: garden-all-device
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/garden-all-device
+  panes:
+    - $VISUAL main.py

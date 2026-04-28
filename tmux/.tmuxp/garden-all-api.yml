@@ -1,0 +1,15 @@
+session_name: garden-all-api
+windows:
+- window_name: dev
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/garden-all-api
+  panes:
+    - $VISUAL manage.py
+
+- window_name: test
+  layout: tiled
+  shell_command_before:
+    - cd $PROJECTS/garden-all-api
+  panes:
+    - source .dev/bin/activate
