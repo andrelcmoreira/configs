@@ -1,4 +1,3 @@
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=_sesper&media_type=all&direct_links=on&format=Atom art
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=mutarellilourenco&media_type=all&direct_links=on&format=Atom art
 https://rss-bridge.org/bridge01/?action=display&context=Username&u=flaviograo&bridge=InstagramBridge&format=Atom art
 https://brickexperimentchannel.wordpress.com/feed/ hardware
@@ -19,25 +18,14 @@ https://feeds.feedburner.com/TheHackersNews misc
 https://hackaday.com/blog/feed/ misc
 https://lukesmith.xyz/index.xml misc
 https://mwl.io/feed misc
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=fromonmgm&media_type=all&direct_links=on&format=Atom misc
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=fundacaomataatlantica.ce&media_type=all&direct_links=on&format=Atom misc
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=theoffice&media_type=all&direct_links=on&format=Atom misc
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=vhs_break&media_type=all&direct_links=on&format=Atom misc
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=bicicletaprodutora&media_type=all&direct_links=on&format=Atom music
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=blacksabbath&media_type=all&direct_links=on&format=Atom music
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=charliebrownjr&media_type=all&direct_links=on&format=Atom music
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=chuckberry&media_type=all&direct_links=on&format=Atom music
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=conjuntomerda&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=deadfishoficial&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=edu_falaschi&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=fernandoschaeferoficial&media_type=all&direct_links=on&format=Atom music
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=ironmaiden&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=kazagastao&media_type=all&direct_links=on&format=Atom music
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=mahmedmusik&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=mrludico&media_type=all&direct_links=on&format=Atom music
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=mukekadirato_oficial&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=paulizakmusic&media_type=all&direct_links=on&format=Atom music
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=tonyiommi&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=trrpln&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=underground_producoes_&media_type=all&direct_links=on&format=Atom music
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=victorpradella&media_type=all&direct_links=on&format=Atom music
@@ -50,6 +38,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCW9vXqPll685zs_s5q8mqpw mus
 http://www.kroah.com/log/index.rss os
 http://www.netbsd.org/changes/rss-netbsd.xml os
 https://blog.netbsd.org/tnf/feed/entries/atom os
+https://blogsystem5.substack.com/feed os
+https://br-linux.org/feed.xml os
 https://guix.gnu.org/feeds/blog.atom os
 https://inbox.vuxu.org/9fans/new.atom os
 https://nixos.org/blog/stories-rss.xml os
@@ -65,9 +55,6 @@ https://www.reddit.com/r/BSD/top.rss?t=week os
 https://www.reddit.com/r/Redox/top.rss?t=week os
 https://www.reddit.com/r/linux/top.rss?t=week os
 https://www.theseus-os.com/feed.xml os
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=nasa&media_type=all&direct_links=on&format=Atom photography
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=peru&media_type=all&direct_links=on&format=Atom photography
-https://rss-bridge.org/bridge01/?action=display&context=Username&u=goprobr&bridge=InstagramBridge&format=Atom photography
 https://www.youtube.com/feeds/videos.xml?channel_id=UChGJXKJaBe5rujxCV8fNuBg photography
 https://www.youtube.com/feeds/videos.xml?channel_id=UCk4Du9D3ai1FTbuI_-86T6w photography
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqhnX4jA0A5paNd1v-zEysw photography
@@ -78,6 +65,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCerEIdrEW-IqwvlH8lTQUJQ ret
 https://www.youtube.com/feeds/videos.xml?channel_id=UCf_suVrG2dA5BTjJhNLwthQ retrocomputing
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfkNhz8S9BSN1l6EsQN0FsQ retrocomputing
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=gamescarebr&media_type=all&direct_links=on&format=Atom retrogaming
+https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=hamiltongameretro&media_type=all&direct_links=on&format=Atom retrogaming
 https://www.copetti.org/index.xml retrogaming
 https://www.reddit.com/r/MasterSystem/top.rss?t=week retrogaming
 https://www.reddit.com/r/SegaSaturn/top.rss?t=week retrogaming
@@ -106,6 +94,8 @@ https://blog.rust-lang.org/feed.xml software
 https://blog.rust-lang.org/inside-rust/feed.xml software
 https://popovicu.com/rss.xml software
 https://repology.org/maintainer/andrelcmoreira@disroot.org/feed-for-repo/void_x86_64/atom software
+https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=meetupdevopsce&media_type=all&direct_links=on&format=Atom software
+https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=pyladiesfortaleza&media_type=all&direct_links=on&format=Atom software
 https://vinc.cc/news/feed.xml software
 https://wincent.dev/blog.rss software
 https://www.netmeister.org/blog/rss.xml software
@@ -121,7 +111,6 @@ https://www.reddit.com/r/vim/top.rss?t=week software
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMUoZehUZBhLb8XaTc8TQrA software
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXPHFM88IlFn68OmLwtPmZA software
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=fortalezaec&media_type=all&direct_links=on&format=Atom sports
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=sportscenter&media_type=all&direct_links=on&format=Atom sports
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFjrDmEnxrG5TRGVO0TPHLA sports
 https://www.youtube.com/feeds/videos.xml?channel_id=UCH1lwktllE0VBUJq1lAF8Jg sports
 https://www.youtube.com/feeds/videos.xml?channel_id=UCLqWHJAdugVAAbxuCBrRgDg sports
@@ -140,8 +129,8 @@ https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=U
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=bizuvegano_fortaleza&media_type=all&direct_links=on&format=Atom veganism
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=estudosveg.cearense&media_type=all&direct_links=on&format=Atom veganism
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=feiragroecologicabenfica&media_type=all&direct_links=on&format=Atom veganism
+https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=fortalezaveganaa&media_type=all&direct_links=on&format=Atom veganism
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=monica.aparecida.maitri&media_type=all&direct_links=on&format=Atom veganism
-https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=novagokula&media_type=all&direct_links=on&format=Atom veganism
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=pachamamacultural&media_type=all&direct_links=on&format=Atom veganism
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=pimentavegana&media_type=all&direct_links=on&format=Atom veganism
 https://rss-bridge.org/bridge01/?action=display&bridge=InstagramBridge&context=Username&u=sativegana&media_type=all&direct_links=on&format=Atom veganism
