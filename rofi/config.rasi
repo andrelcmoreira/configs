@@ -9,11 +9,11 @@ configuration {
 
 * {
     background:                  #3a3a3a;
-    foreground:                  #e9d5c6;
+    foreground:                  #60b48a;
     selected-normal-foreground:  #3a3a3a;
     alternate-normal-background: #3a3a3a;
     bordercolor:                 #3a3a3a;
-    selected-normal-background:  #8cd0d3;
+    selected-normal-background:  #60b48a;
     border-color:                #3a3a3a;
     separatorcolor:              #3a3a3a;
 }

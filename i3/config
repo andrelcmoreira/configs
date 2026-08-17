@@ -233,7 +233,7 @@ bar {
         background #3a3a3a
         statusline #ffffff
 
-        focused_workspace  #3a3a3a #3a3a3a #8cd0d3
+        focused_workspace  #3a3a3a #3a3a3a #60b48a
         active_workspace   #3a3a3a #3a3a3a #e9d5c6
         inactive_workspace #3a3a3a #3a3a3a #e9d5c6
         urgent_workspace   #8cd0d3 #8cd0d3 #3a3a3a
